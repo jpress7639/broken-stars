@@ -27,7 +27,7 @@ Broken Stars
 
 ## Overview
 
-_**Broken Stars** is a resource for people to find insights on certain mental disorders that they can then eventually seek out the help they need. Each mental disorder is told in the eyes of different famous and historic artists who went through the same disorders. 
+_**Broken Stars** is a resource for people to find insights on certain mental disorders that they can then eventually seek out the help they need. A artist can also be a user with the ability to add their own story of mental health to the list and share resources that have helped them.
 
 
 <br>
