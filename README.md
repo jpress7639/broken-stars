@@ -1,24 +1,53 @@
 # Broken Stars
+Broken Stars 
+
+# PROJECT 4 README <!-- omit in toc -->
+
+> The Project Planning section **should be completed** for your project pitch with instructors.
+>
+> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
+
+- [Overview](#overview)
+- [MVP](#mvp)
+  - [Goals](#goals)
+  - [Libraries and Dependencies](#libraries-and-dependencies)
+  - [Client (Front End)](#client-front-end)
+    - [Wireframes](#wireframes)
+    - [Component Tree](#component-tree)
+    - [Component Hierarchy](#component-hierarchy)
+    - [Component Breakdown](#component-breakdown)
+    - [Time Estimates](#time-estimates)
+  - [Server (Back End)](#server-back-end)
+    - [ERD Model](#erd-model)
+- [Post-MVP](#post-mvp)
+- [Code Showcase](#code-showcase)
+- [Code Issues & Resolutions](#code-issues--resolutions)
+
+<br>
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Broken Stars** is a resource for people to find insights on certain mental disorders that they can then eventually seek out the help they need. Each mental disorder is told in the eyes of different famous and historic artists who went through the same disorders. 
 
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+The **Broken Stars** MVP will consist of:
+- a working back-end database using Ruby on Rails and SQL with three different tables (symptoms, mental disorders(joining), and artists) that will be rendered to the front-end and will be able to have CRUD 
+- a nicely styled site using Flexbox and Grid
+- a React front-end app with eight functional/class components that will determine what kind of help the user would need when they input their symptoms/feelings
+- the ending component that will determine which resource will be best for the user in the end 
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
+- To be able to effectively give mental health resources through this kind of storytelling
+- To provide ease and functionality for a user to effectively receive the knowledge they need. 
 - _Phasellus dapibus fermentum risus vitae bibendum._
 - _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
 - _etc._
@@ -29,13 +58,13 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Library      | Description                                  |
+| :--------------: | :-----------------------------------------   |
+|      React       | to serve as the front end for the project    |
+|   React Router   | to implement links to each page and for CRUD |
+| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._   |
+|     Express      | _Lorem ipsum dolor sit amet, consectetur._   |
+|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._   |
 
 <br>
 
@@ -129,15 +158,9 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Animation using paintings segments as the focus on the background 
+- Creating a user into the database, so they can keep track of the artists that they relate to the most 
+
+
 
 ***
-
-## Code Showcase
-
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
-## Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution.
-
