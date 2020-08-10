@@ -58,8 +58,10 @@ The **Broken Stars** MVP will consist of:
 | :--------------: | :-----------------------------------------   |
 |      React       | to serve as the front end for the project    |
 |   React Router   | to implement links to each page and for CRUD |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._   |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._   |
+|     Rails        |  To provide support to the database.         |
+|     Axios        | To be able to make calls from the backend to the frontend    |
+|     Rack Cors    | To making AJAX Cross Sharing Able           |
+|     Ruby      | The language used to develop the back-end  |
 |  Express Router  | _Lorem ipsum dolor sit amet, consectetur._   |
 
 <br>
@@ -136,13 +138,14 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    App    | functional |   n   |   y   | _The App will contain the route paths for each of the component screens.  |
+|    App    | functional |   n   |   y   | _The App will contain the route paths for each of the component screens._  |
 |  MainMenu  | functional |   n   |   y   | The MainMenu will navigation to direct the user to a mental health disorder or story of an artist._  |
 |   Layout    |   functional    |   n   |   y   | _The layout will contain the general layout for each page of the app._      |
 | Header  | functional |   n   |   n   | _The header will have the logo of the app with a direct link returning one to the MainMenu_                 |
-|    View Story    | functional |   y   |   y   | _The view story page will go through an an entire set from the data, viewing the artist and their story with a certain mental health disorder._ |
+|    View Story    | functional |   y   |   y   | _The view story page will go through an an entire set from the data, viewing the artist and their story with a certain mental health disorder. It will be used in a slide presentation mode._ |
 | Edit Story  | functional |   y   |   y   |    _The edit story component will be where the user may edit or delete the story altogether_                 |
-| Add Symptoms | functional | y    |   y    |     _This component will give the user ability to add any symptoms onto a certain disorder                   |
+| Add Symptoms | functional | y    |   y    |     _This component will give the user ability to add any symptoms onto a certain disorder_                   |
+
 
 #### Time Estimates
 
@@ -150,12 +153,15 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Constructing Rails Data |    H     |     3 hrs      |        |    TBD    |
+| Constructing Rails Data (Creating Models, Migrations, Controllers)|    H     |     3 hrs      |        |    TBD    |
 | Create CRUD Actions Back End |    H     |     2 hrs      |        |     TBD     |
-| Rendering Data to React |     H    |    1 hr    |       |     TBD     |
-| CRUD Functionality in React | H    | 2 hrs    |      |      TBD   |
+| Rendering Data to React |     H    |    3 hrs    |       |     TBD     |
+| Constructing Viewing Functionality | M  |  2 hrs |       |    TBD     |
+| CRUD Functionality in React | H    | 4 hrs    |      |      TBD    |
+| Implementing State and Props Through Components | H  | 2 hrs |     |   TBD   |
+| Routing through React |   M    |  2 hrs      |      |     TBD      |
 | Structuring React Components |    H    |    5 hrs    |         |     TBD     |
-| CSS Implementation | M | 2 hrs |      |     TBD     |
+| Basic CSS Styling | M | 2 hrs |      |     TBD     |
 | TOTAL               |          |     5 hrs      |       |     TBD     |
 
 <br>
