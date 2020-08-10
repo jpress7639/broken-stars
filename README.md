@@ -111,8 +111,22 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ App.js
+      |__ MainMenu.jsx
+      |__ Layout
+          |__Layout.jsx
+          |__Layout.css
+          |__ Header.jsx
+          |__ Header.css
+      |__ Story
+          |__ViewStory.jsx
+          |__AddStory.jsx
+          |__AddSymptoms.jsx
+          |__EditStory.jsx
 |__ services/
+      |__ ApiHelper.js
+      |__ stories.js
+      |__ symptoms.js
 
 ```
 
@@ -122,11 +136,13 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    App    | functional |   n   |   y   | _The App will contain the route paths for each of the component screens.  |
+|  MainMenu  | functional |   n   |   y   | The MainMenu will navigation to direct the user to a mental health disorder or story of an artist._  |
+|   Layout    |   functional    |   n   |   y   | _The layout will contain the general layout for each page of the app._      |
+| Header  | functional |   n   |   n   | _The header will have the logo of the app with a direct link returning one to the MainMenu_                 |
+|    View Story    | functional |   y   |   y   | _The view story page will go through an an entire set from the data, viewing the artist and their story with a certain mental health disorder._ |
+| Edit Story  | functional |   y   |   y   |    _The edit story component will be where the user may edit or delete the story altogether_                 |
+| Add Symptoms | functional | y    |   y    |     _This component will give the user ability to add any symptoms onto a certain disorder                   |
 
 #### Time Estimates
 
