@@ -38,6 +38,39 @@ class ArtistsController < ApplicationController
     @artist.destroy
   end
 
+# Adding Symptoms 
+def add_symptom
+  @symptom = Symptom.new(symptom_params)
+  @artist = Artist.find(params[:id])
+
+  @artist.symptoms << @symptom
+
+  if @symptom.save
+    render json: @symptom, status: :created, location: @symptom
+  else
+    render json: @symptom.errors, status: :unprocessable_entity
+  end
+end
+
+# Adding Resources
+def create
+  @resource = Resource.new(resource_params)
+  @artist = Artist.find(params[:artist_id])
+
+  @artist.resources << @resource
+
+  if @resource.save
+    render json: @resource, status: :created, location: @resource
+  else
+    render json: @resource.errors, status: :unprocessable_entity
+  end
+end
+
+# DELETE /symptoms/1
+  def delete_symptom 
+    @symptom.destroy
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_artist

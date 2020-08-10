@@ -12,18 +12,7 @@ class ResourcesController < ApplicationController
   def show
     render json: @resource
   end
-
-  # POST /resources
-  def create
-    @resource = Resource.new(resource_params)
-    @resource.artist = @current_artist
-    if @resource.save
-      render json: @resource, status: :created, location: @resource
-    else
-      render json: @resource.errors, status: :unprocessable_entity
-    end
-  end
-
+  
   # PATCH/PUT /resources/1
   def update
     if @resource.update(resource_params)
@@ -31,11 +20,6 @@ class ResourcesController < ApplicationController
     else
       render json: @resource.errors, status: :unprocessable_entity
     end
-  end
-
-  # DELETE /resources/1
-  def destroy
-    @resource.destroy
   end
 
   private
