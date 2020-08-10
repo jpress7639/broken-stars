@@ -120,6 +120,8 @@ src
           |__Layout.css
           |__ Header.jsx
           |__ Header.css
+          |__ Footer.jsx
+          |__ Footer.css
       |__ Story
           |__ViewStory.jsx
           |__AddStory.jsx
@@ -145,6 +147,7 @@ src
 |    View Story    | functional |   y   |   y   | _The view story page will go through an an entire set from the data, viewing the artist and their story with a certain mental health disorder. It will be used in a slide presentation mode._ |
 | Edit Story  | functional |   y   |   y   |    _The edit story component will be where the user may edit or delete the story altogether_                 |
 | Add Symptoms | functional | y    |   y    |     _This component will give the user ability to add any symptoms onto a certain disorder_                   |
+| Footer   |   functional   | n    |  y     |  _This component will be where the resource will be displayed                                       |
 
 
 #### Time Estimates
@@ -153,7 +156,7 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Constructing Rails Data (Creating Models, Migrations, Controllers)|    H     |     3 hrs      |        |    TBD    |
+| Constructing Rails Data (Creating Models, Migrating, Controllers)|    H     |     3 hrs      |        |    TBD    |
 | Create CRUD Actions Back End |    H     |     2 hrs      |        |     TBD     |
 | Rendering Data to React |     H    |    3 hrs    |       |     TBD     |
 | Constructing Viewing Functionality | M  |  2 hrs |       |    TBD     |
@@ -162,6 +165,7 @@ src
 | Routing through React |   M    |  2 hrs      |      |     TBD      |
 | Structuring React Components |    H    |    5 hrs    |         |     TBD     |
 | Basic CSS Styling | M | 2 hrs |      |     TBD     |
+| Media Queries (Phone, Tablet, Computer)  |   M  |  2 hrs |      |  TBD      |
 | TOTAL               |          |     5 hrs      |       |     TBD     |
 
 <br>
