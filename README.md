@@ -54,7 +54,7 @@ The **Broken Stars** MVP will consist of:
 |     Axios        | To be able to make calls from the backend to the frontend    |
 |     Rack Cors    | To making AJAX Cross Sharing Able           |
 |     Ruby      | The language used to develop the back-end  |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._   |
+
 
 <br>
 
@@ -97,7 +97,7 @@ src
       |__ Story
           |__ViewStory.jsx
           |__AddStory.jsx
-          |__AddSymptoms.jsx
+          |__AddResources.jsx
           |__EditStory.jsx
 |__ services/
       |__ ApiHelper.js
@@ -118,7 +118,7 @@ src
 | Header  | functional |   n   |   n   | _The header will have the logo of the app with a direct link returning one to the MainMenu_                 |
 |    View Story    | functional |   y   |   y   | _The view story page will go through an an entire set from the data, viewing the artist and their story with a certain mental health disorder. It will be used in a slide presentation mode._ |
 | Edit Story  | functional |   y   |   y   |    _The edit story component will be where the user may edit or delete the story altogether_                 |
-| Add Symptoms | functional | y    |   y    |     _This component will give the user ability to add any symptoms onto a certain disorder_                   |
+| Add Resources | functional | y    |   y    |     _This component will give the user ability to add any symptoms onto a certain disorder_                   |
 | Footer   |   functional   | n    |  y     |  _This component will be where the resource will be displayed                                       |
 | Disclaimer | class        |  n    |   n    | _Mainly just a disclaimer about if the user is experiencing more dire symptoms to call emergency services_ |
 
