@@ -35,10 +35,8 @@ _**Broken Stars** is a resource for people to find insights on certain mental di
 ## MVP
 
 The **Broken Stars** MVP will consist of:
-- a working back-end database using Ruby on Rails and SQL with three different tables (symptoms, mental disorders(joining), and artists) that will be rendered to the front-end and will be able to have CRUD 
-- a nicely styled site using Flexbox and Grid
-- a React front-end app with eight functional/class components that will determine what kind of help the user would need when they input their symptoms/feelings
-- the ending component that will determine which resource will be best for the user in the end 
+- a working back-end database using Ruby on Rails and SQL with three different tables (symptoms, mental disorders(joining), and artists) that will be rendered to the front-end and will be able to have functional CRUD 
+- a React front-end app with eight functional/class components that will showcase artist's stories with mental illnesses along with the rescources they used to overcome them 
 
 
 
@@ -46,11 +44,9 @@ The **Broken Stars** MVP will consist of:
 
 ### Goals
 
-- To be able to effectively give mental health resources through this kind of storytelling
+- To be able to effectively give mental health resources through storytelling from artists.
 - To provide ease and functionality for a user to effectively receive the knowledge they need. 
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- To allow users to add their own stories, edit, and delete their own stories.
 
 <br>
 
@@ -138,11 +134,13 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| Constructing Rails Data |    H     |     3 hrs      |        |    TBD    |
+| Create CRUD Actions Back End |    H     |     2 hrs      |        |     TBD     |
+| Rendering Data to React |     H    |    1 hr    |       |     TBD     |
+| CRUD Functionality in React | H    | 2 hrs    |      |      TBD   |
+| Structuring React Components |    H    |    5 hrs    |         |     TBD     |
+| CSS Implementation | M | 2 hrs |      |     TBD     |
+| TOTAL               |          |     5 hrs      |       |     TBD     |
 
 <br>
 
@@ -150,7 +148,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+[https://app.diagrams.net/#G15RjMsnQrM-A0pLUjIN2alwGlY85jWyR8]
 
 <br>
 
