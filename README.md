@@ -115,6 +115,7 @@ src
 |__ components/
       |__ App.js
       |__ MainMenu.jsx
+      |__ Disclaimer.jsx
       |__ Layout
           |__Layout.jsx
           |__Layout.css
@@ -148,7 +149,7 @@ src
 | Edit Story  | functional |   y   |   y   |    _The edit story component will be where the user may edit or delete the story altogether_                 |
 | Add Symptoms | functional | y    |   y    |     _This component will give the user ability to add any symptoms onto a certain disorder_                   |
 | Footer   |   functional   | n    |  y     |  _This component will be where the resource will be displayed                                       |
-
+| Disclaimer | class        |  n    |   n    | _Mainly just a disclaimer about if the user is experiencing more dire symptoms to call emergency services_ |
 
 #### Time Estimates
 
@@ -161,12 +162,12 @@ src
 | Rendering Data to React |     H    |    3 hrs    |       |     TBD     |
 | Constructing Viewing Functionality | M  |  2 hrs |       |    TBD     |
 | CRUD Functionality in React | H    | 4 hrs    |      |      TBD    |
-| Implementing State and Props Through Components | H  | 2 hrs |     |   TBD   |
-| Routing through React |   M    |  2 hrs      |      |     TBD      |
+| Implementing State and Props Through Components | H  | 4 hrs |     |   TBD   |
+| Routing through React |   M    |  3 hrs      |      |     TBD      |
 | Structuring React Components |    H    |    5 hrs    |         |     TBD     |
 | Basic CSS Styling | M | 2 hrs |      |     TBD     |
 | Media Queries (Phone, Tablet, Computer)  |   M  |  2 hrs |      |  TBD      |
-| TOTAL               |          |     5 hrs      |       |     TBD     |
+| TOTAL               |          |     30 hrs      |       |     TBD     |
 
 <br>
 
