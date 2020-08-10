@@ -71,7 +71,6 @@ https://app.diagrams.net/#G14LKB4AAhKwI-FiQ8imYJ5X0wgGhPvGqO
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -116,7 +115,7 @@ src
 | Header  | functional |   n   |   n   | _The header will have the logo of the app with a direct link returning one to the MainMenu_                 |
 |    View Story    | functional |   y   |   y   | _The view story page will go through an an entire set from the data, viewing the artist and their story with a certain mental health disorder. It will be used in a slide presentation mode._ |
 | Edit Story  | functional |   y   |   y   |    _The edit story component will be where the user may edit or delete the story altogether_                 |
-| Add Resources | functional | y    |   y    |     _This component will give the user ability to add any symptoms onto a certain disorder_                   |
+| Add Resources | functional | y    |   y    |     _This component will give the user ability to add or delete any resources onto a certain disorder_                   |
 | Footer   |   functional   | n    |  y     |  _This component will be where the resource will be displayed                                       |
 | Disclaimer | class        |  n    |   n    | _Mainly just a disclaimer about if the user is experiencing more dire symptoms to call emergency services_ |
 
