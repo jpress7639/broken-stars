@@ -97,10 +97,12 @@ src
           |__AddStory.jsx
           |__AddResources.jsx
           |__EditStory.jsx
+          |__Add Symptoms.jsx
 |__ services/
       |__ ApiHelper.js
-      |__ stories.js
+      |__ artists.js
       |__ symptoms.js
+      |__ resources.js
 
 ```
 
@@ -118,6 +120,7 @@ src
 |    View Story    | functional |   y   |   y   | _The view story page will go through an an entire set from the data, viewing the artist and their story with a certain mental health disorder. It will be used in a slide presentation mode._ |
 | Edit Story  | functional |   y   |   y   |    _The edit story component will be where the user may edit or delete the story altogether_                 |
 | Add Resources | functional | y    |   y    |     _This component will give the user ability to add or delete any resources onto a certain disorder_                   |
+| Add Symptoms | functional |  y   |   y     | _This component will give the user access to updating symptoms to a story before the finish creating it._ |
 | Footer   |   functional   | n    |  y     |  _This component will be where the resource will be displayed                                       |
 | Disclaimer | class        |  n    |   n    | _Mainly just a disclaimer about if the user is experiencing more dire symptoms to call emergency services_ |
 
