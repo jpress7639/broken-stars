@@ -82,7 +82,8 @@ src
       |__ mockups
 |__ components/
       |__ App.js
-      |__ MainMenu.jsx
+      |__ Main.jsx
+      |__ Home.jsx
       |__ Disclaimer.jsx
       |__ Layout
           |__Layout.jsx
@@ -109,8 +110,9 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    App    | functional |   n   |   y   | _The App will contain the route paths for each of the component screens._  |
-|  MainMenu  | functional |   n   |   y   | The MainMenu will navigation to direct the user to a mental health disorder or story of an artist._  |
+|    App    | functional |   n   |   y   | _To host the app and be rendered into the HTML._  |
+|   Home     | class      |   y    |   y    | _The home page will map the different stories for each user to perform CRUD._ |
+|  Main      | functional |   n   |   y   | _The MainMenu will navigation to direct the user to a mental health disorder or story of an artist._  |
 |   Layout    |   functional    |   n   |   y   | _The layout will contain the general layout for each page of the app._      |
 | Header  | functional |   n   |   n   | _The header will have the logo of the app with a direct link returning one to the MainMenu_                 |
 |    View Story    | functional |   y   |   y   | _The view story page will go through an an entire set from the data, viewing the artist and their story with a certain mental health disorder. It will be used in a slide presentation mode._ |
