@@ -62,12 +62,10 @@ The **Broken Stars** MVP will consist of:
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+https://wireframepro.mockflow.com/view/Mac049ca95b55e404cfcc572d6e79357d1597065568717
 
 
 #### Component Tree
-
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
 
 https://app.diagrams.net/#G14LKB4AAhKwI-FiQ8imYJ5X0wgGhPvGqO
 
