@@ -33,3 +33,1411 @@ FOREIGN KEY ("artist_id")
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3226442265051137790)[0m
   [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (10.7ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (3.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."profile_img" = $1 LIMIT $2[0m  [["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."years" = $1 LIMIT $2[0m  [["years", "1853-1890"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."disorder" = $1 LIMIT $2[0m  [["disorder", "Schizoaffective Disorder"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_example" = $1 LIMIT $2[0m  [["work_example", "Sunflowers (1888-1889)"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_URL" = $1 LIMIT $2[0m  [["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."story" = $1 LIMIT $2[0m  [["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["LIMIT", 1]]
+  [1m[36mArtist Create (0.7ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:07:55.883631"], ["updated_at", "2020-08-11 00:07:55.883631"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."profile_img" = $1 LIMIT $2[0m  [["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."years" = $1 LIMIT $2[0m  [["years", "1853-1890"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."disorder" = $1 LIMIT $2[0m  [["disorder", "Schizoaffective Disorder"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_example" = $1 LIMIT $2[0m  [["work_example", "Sunflowers (1888-1889)"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_URL" = $1 LIMIT $2[0m  [["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."story" = $1 LIMIT $2[0m  [["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["LIMIT", 1]]
+  [1m[35m (6.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (1.2ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[36mResource Load (8.0ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Destroy (11.8ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."profile_img" = $1 LIMIT $2[0m  [["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."years" = $1 LIMIT $2[0m  [["years", "1853-1890"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."disorder" = $1 LIMIT $2[0m  [["disorder", "Schizoaffective Disorder"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_example" = $1 LIMIT $2[0m  [["work_example", "Sunflowers (1888-1889)"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_URL" = $1 LIMIT $2[0m  [["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."story" = $1 LIMIT $2[0m  [["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["LIMIT", 1]]
+  [1m[36mArtist Create (1.0ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:10:41.690045"], ["updated_at", "2020-08-11 00:10:41.690045"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "SARDAA"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (0.7ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[36mResource Load (0.5ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Destroy (8.4ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 2]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."profile_img" = $1 LIMIT $2[0m  [["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."years" = $1 LIMIT $2[0m  [["years", "1853-1890"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."disorder" = $1 LIMIT $2[0m  [["disorder", "Schizoaffective Disorder"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_example" = $1 LIMIT $2[0m  [["work_example", "Sunflowers (1888-1889)"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_URL" = $1 LIMIT $2[0m  [["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."story" = $1 LIMIT $2[0m  [["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["LIMIT", 1]]
+  [1m[36mArtist Create (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:15:55.659581"], ["updated_at", "2020-08-11 00:15:55.659581"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "SARDAA"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (0.5ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[36mResource Load (0.7ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[36mArtist Load (5.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Destroy (1.3ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 3]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."profile_img" = $1 LIMIT $2[0m  [["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."years" = $1 LIMIT $2[0m  [["years", "1853-1890"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."disorder" = $1 LIMIT $2[0m  [["disorder", "Schizoaffective Disorder"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_example" = $1 LIMIT $2[0m  [["work_example", "Sunflowers (1888-1889)"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_URL" = $1 LIMIT $2[0m  [["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."story" = $1 LIMIT $2[0m  [["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["LIMIT", 1]]
+  [1m[36mArtist Create (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:16:08.027574"], ["updated_at", "2020-08-11 00:16:08.027574"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "SARDAA"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (0.6ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[36mResource Load (0.6ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."profile_img" = $1 LIMIT $2[0m  [["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."years" = $1 LIMIT $2[0m  [["years", "1853-1890"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."disorder" = $1 LIMIT $2[0m  [["disorder", "Schizoaffective Disorder"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_example" = $1 LIMIT $2[0m  [["work_example", "Sunflowers (1888-1889)"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_URL" = $1 LIMIT $2[0m  [["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."story" = $1 LIMIT $2[0m  [["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (0.6ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[36mResource Load (0.6ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Destroy (0.9ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 4]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."profile_img" = $1 LIMIT $2[0m  [["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."years" = $1 LIMIT $2[0m  [["years", "1853-1890"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (4.0ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."disorder" = $1 LIMIT $2[0m  [["disorder", "Schizoaffective Disorder"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_example" = $1 LIMIT $2[0m  [["work_example", "Sunflowers (1888-1889)"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."work_URL" = $1 LIMIT $2[0m  [["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["LIMIT", 1]]
+  [1m[36mArtist Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."story" = $1 LIMIT $2[0m  [["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["LIMIT", 1]]
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:22:42.306868"], ["updated_at", "2020-08-11 00:22:42.306868"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "SARDAA"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (0.9ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[36mResource Load (0.8ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Destroy (0.9ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Create (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:24:17.747239"], ["updated_at", "2020-08-11 00:24:17.747239"]]
+  [1m[35m (10.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "SARDAA"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (0.6ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[36mResource Load (4.2ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Destroy (3.8ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 6]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:27:23.869696"], ["updated_at", "2020-08-11 00:27:23.869696"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "SARDAA"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["LIMIT", 1]]
+  [1m[36mResource Create (18.6ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "SARDAA"], ["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["artist_id", 7], ["created_at", "2020-08-11 00:27:23.906666"], ["updated_at", "2020-08-11 00:27:23.906666"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "Mental Health Association"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["LIMIT", 1]]
+  [1m[36mResource Create (0.4ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mental Health Association"], ["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["artist_id", 7], ["created_at", "2020-08-11 00:27:23.937373"], ["updated_at", "2020-08-11 00:27:23.937373"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "resources"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "SARDAA"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mResource Exists? (11.6ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "Mental Health Association"], ["id", 2], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (0.5ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[36mResource Load (0.5ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Destroy (1.3ms)[0m  [1m[31mDELETE FROM "resources" WHERE "resources"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resources" WHERE "resources"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Destroy (0.8ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 7]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Create (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:28:05.009744"], ["updated_at", "2020-08-11 00:28:05.009744"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "SARDAA"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["LIMIT", 1]]
+  [1m[36mResource Create (1.0ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "SARDAA"], ["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["artist_id", 8], ["created_at", "2020-08-11 00:28:05.026834"], ["updated_at", "2020-08-11 00:28:05.026834"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "Mental Health Association"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["LIMIT", 1]]
+  [1m[36mResource Create (0.4ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mental Health Association"], ["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["artist_id", 8], ["created_at", "2020-08-11 00:28:05.038777"], ["updated_at", "2020-08-11 00:28:05.038777"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "resources"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "SARDAA"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "Mental Health Association"], ["id", 4], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Create (1.4ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "psychosis"], ["artist_id", 8], ["created_at", "2020-08-11 00:28:05.064173"], ["updated_at", "2020-08-11 00:28:05.064173"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Create (1.2ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "mania"], ["artist_id", 8], ["created_at", "2020-08-11 00:28:05.094875"], ["updated_at", "2020-08-11 00:28:05.094875"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Create (0.5ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "depression"], ["artist_id", 8], ["created_at", "2020-08-11 00:28:05.100941"], ["updated_at", "2020-08-11 00:28:05.100941"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "symptoms"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (0.8ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Destroy (0.6ms)[0m  [1m[31mDELETE FROM "symptoms" WHERE "symptoms"."id" = $1[0m  [["id", 1]]
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Destroy (0.4ms)[0m  [1m[31mDELETE FROM "symptoms" WHERE "symptoms"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Destroy (0.4ms)[0m  [1m[31mDELETE FROM "symptoms" WHERE "symptoms"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mResource Load (1.3ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resources" WHERE "resources"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resources" WHERE "resources"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Destroy (2.8ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 8]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:29:10.773656"], ["updated_at", "2020-08-11 00:29:10.773656"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "SARDAA"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["LIMIT", 1]]
+  [1m[36mResource Create (0.9ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "SARDAA"], ["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["artist_id", 9], ["created_at", "2020-08-11 00:29:10.816476"], ["updated_at", "2020-08-11 00:29:10.816476"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "Mental Health Association"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["LIMIT", 1]]
+  [1m[36mResource Create (0.4ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mental Health Association"], ["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["artist_id", 9], ["created_at", "2020-08-11 00:29:10.828726"], ["updated_at", "2020-08-11 00:29:10.828726"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "resources"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "SARDAA"], ["id", 5], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["id", 5], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "Mental Health Association"], ["id", 6], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Create (0.4ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "psychosis"], ["artist_id", 9], ["created_at", "2020-08-11 00:29:10.852958"], ["updated_at", "2020-08-11 00:29:10.852958"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Create (0.4ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "mania"], ["artist_id", 9], ["created_at", "2020-08-11 00:29:10.865349"], ["updated_at", "2020-08-11 00:29:10.865349"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Create (0.4ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "depression"], ["artist_id", 9], ["created_at", "2020-08-11 00:29:10.879067"], ["updated_at", "2020-08-11 00:29:10.879067"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "symptoms"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSymptom Load (0.6ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Destroy (0.4ms)[0m  [1m[31mDELETE FROM "symptoms" WHERE "symptoms"."id" = $1[0m  [["id", 4]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Destroy (0.4ms)[0m  [1m[31mDELETE FROM "symptoms" WHERE "symptoms"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Destroy (0.3ms)[0m  [1m[31mDELETE FROM "symptoms" WHERE "symptoms"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mResource Load (0.6ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resources" WHERE "resources"."id" = $1[0m  [["id", 5]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resources" WHERE "resources"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Destroy (0.7ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 9]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Vincent Van Gogh"], ["LIMIT", 1]]
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vincent Van Gogh"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg"], ["years", "1853-1890"], ["disorder", "Schizoaffective Disorder"], ["work_example", "Sunflowers (1888-1889)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"], ["story", "Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression."], ["created_at", "2020-08-11 00:29:55.562141"], ["updated_at", "2020-08-11 00:29:55.562141"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "SARDAA"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["LIMIT", 1]]
+  [1m[36mResource Create (0.5ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "SARDAA"], ["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["artist_id", 10], ["created_at", "2020-08-11 00:29:55.581706"], ["updated_at", "2020-08-11 00:29:55.581706"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "Mental Health Association"], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["LIMIT", 1]]
+  [1m[36mResource Create (0.4ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mental Health Association"], ["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["artist_id", 10], ["created_at", "2020-08-11 00:29:55.599879"], ["updated_at", "2020-08-11 00:29:55.599879"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "resources"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "SARDAA"], ["id", 7], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://sardaa.org/?gclid=CjwKCAjw4MP5BRBtEiwASfwAL8-EsIH4lLIv8pSAGGXdreHLDvK8tRvs-TF6rhtiHWDJAyh7mcoRDxoCxTkQAvD_BwE"], ["id", 7], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "Mental Health Association"], ["id", 8], ["LIMIT", 1]]
+  [1m[36mResource Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://www.mhanational.org/conditions/schizoaffective-disorder"], ["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Create (0.5ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "psychosis"], ["artist_id", 10], ["created_at", "2020-08-11 00:29:55.625054"], ["updated_at", "2020-08-11 00:29:55.625054"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Create (0.5ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "mania"], ["artist_id", 10], ["created_at", "2020-08-11 00:29:55.635397"], ["updated_at", "2020-08-11 00:29:55.635397"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSymptom Create (0.4ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "depression"], ["artist_id", 10], ["created_at", "2020-08-11 00:29:55.639712"], ["updated_at", "2020-08-11 00:29:55.639712"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "symptoms"[0m
+  [1m[36mArtist Load (2.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mSymptom Load (0.4ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."artist_id" = $1[0m  [["artist_id", 10]]
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mResource Load (0.7ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 10]]
+Started GET "/" for ::1 at 2020-08-10 21:06:32 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/JakePressman/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/JakePressman/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 53.6ms | Allocations: 482)
+Completed 200 OK in 104ms (Views: 85.2ms | ActiveRecord: 0.0ms | Allocations: 2712)
+
+
+Started GET "/artist/10" for ::1 at 2020-08-10 21:06:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artist/10"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artists/10" for ::1 at 2020-08-10 21:06:59 -0400
+  
+SyntaxError (/Users/JakePressman/General_Assembly/sei/constellations/unit_4/week_12/broken-stars/app/controllers/artists_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting end
+...  render json: @artists include: :symptoms
+...                        ^~~~~~~
+/Users/JakePressman/General_Assembly/sei/constellations/unit_4/week_12/broken-stars/app/controllers/artists_controller.rb:13: syntax error, unexpected tIDENTIFIER, expecting end
+...   render json: @artist include: :symptoms
+...                        ^~~~~~~):
+  
+app/controllers/artists_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/artists_controller.rb:13: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/artists_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/artists_controller.rb:13: syntax error, unexpected tIDENTIFIER, expecting end
+Started GET "/artists" for ::1 at 2020-08-10 21:09:12 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 59ms (Views: 27.3ms | ActiveRecord: 19.1ms | Allocations: 10459)
+
+
+Started GET "/artists/10" for ::1 at 2020-08-10 21:09:20 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArtist Load (8.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:65:in `set_artist'
+Completed 200 OK in 58ms (Views: 0.8ms | ActiveRecord: 42.2ms | Allocations: 1308)
+
+
+Started GET "/artists/10/symptoms" for ::1 at 2020-08-10 21:09:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artists/10/symptoms"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artists/" for ::1 at 2020-08-10 21:10:40 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (26.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 4.1ms | ActiveRecord: 26.9ms | Allocations: 1066)
+
+
+Started GET "/artists/10" for ::1 at 2020-08-10 21:10:59 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:65:in `set_artist'
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.6ms | Allocations: 857)
+
+
+Started GET "/artists/10/symptoms" for ::1 at 2020-08-10 21:11:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artists/10/symptoms"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artists/10/symptom" for ::1 at 2020-08-10 21:11:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artists/10/symptom"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artists/10/symptoms" for ::1 at 2020-08-10 21:11:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artists/10/symptoms"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artists/10/symptoms" for ::1 at 2020-08-10 21:12:25 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>"10"}
+  [1m[36mSymptom Load (69.6ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  ↳ app/controllers/symptoms_controller.rb:8:in `index'
+Completed 200 OK in 284ms (Views: 29.3ms | ActiveRecord: 220.6ms | Allocations: 5491)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-08-10 21:12:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artists/10/resources" for ::1 at 2020-08-10 21:12:36 -0400
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"10"}
+  [1m[36mResource Load (84.9ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  ↳ app/controllers/resources_controller.rb:8:in `index'
+Completed 200 OK in 181ms (Views: 81.2ms | ActiveRecord: 95.0ms | Allocations: 5716)
+
+
+Started PUT "/artists" for ::1 at 2020-08-10 21:18:42 -0400
+  
+ActionController::RoutingError (No route matches [PUT] "/artists"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artists" for ::1 at 2020-08-10 21:18:58 -0400
+Processing by ArtistsController#index as */*
+  Parameters: {"id"=>"teabyesea2008", "title"=>"Tea Bye Sea", "content"=>["In The Midst", "The Riddle", "Lullabye", "Tea Bye Sea", "Deo", "Off the Chart", "Fine Lines", "I Forgive You"], "featuredArtists"=>["Becca Stevens Band"], "releaseYear"=>"2008", "album"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1594322247/undefined_v0wenj.jpg", "artist"=>{"id"=>"teabyesea2008"}}
+  [1m[36mArtist Load (20.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 75ms (Views: 45.6ms | ActiveRecord: 164.4ms | Allocations: 7093)
+
+
+Started PUT "/artists/10" for ::1 at 2020-08-10 21:19:48 -0400
+Processing by ArtistsController#update as */*
+  Parameters: {"work_example"=>"Sunflowers (1889)", "id"=>"10", "artist"=>{"work_example"=>"Sunflowers (1889)"}}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:65:in `set_artist'
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (30.1ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Update (47.8ms)[0m  [1m[33mUPDATE "artists" SET "work_example" = $1, "updated_at" = $2 WHERE "artists"."id" = $3[0m  [["work_example", "Sunflowers (1889)"], ["updated_at", "2020-08-11 01:19:48.631688"], ["id", 10]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 391ms (Views: 0.8ms | ActiveRecord: 95.0ms | Allocations: 5259)
+
+
+Started POST "/artists" for ::1 at 2020-08-10 21:25:17 -0400
+Processing by ArtistsController#create as */*
+  Parameters: {"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "year"=>"1899-1961", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "work_url"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076164/Oldmansea_qbvvvx.jpg", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history.", "artist"=>{"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history."}}
+Completed 500 Internal Server Error in 838ms (ActiveRecord: 0.0ms | Allocations: 70296)
+
+
+  
+NameError (undefined local variable or method `resource_params' for #<ArtistsController:0x00007faea85c42f8>):
+  
+app/controllers/artists_controller.rb:45:in `create'
+Started POST "/artists" for ::1 at 2020-08-10 21:28:06 -0400
+Processing by ArtistsController#create as */*
+  Parameters: {"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "year"=>"1899-1961", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "work_url"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076164/Oldmansea_qbvvvx.jpg", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history.", "artist"=>{"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history."}}
+Completed 500 Internal Server Error in 1401ms (ActiveRecord: 0.0ms | Allocations: 70278)
+
+
+  
+NameError (undefined local variable or method `resource_params' for #<ArtistsController:0x00007faea7e72ab8>):
+  
+app/controllers/artists_controller.rb:45:in `create'
+Started POST "/artists" for ::1 at 2020-08-10 21:32:14 -0400
+Processing by ArtistsController#create as */*
+  Parameters: {"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "year"=>"1899-1961", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "work_url"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076164/Oldmansea_qbvvvx.jpg", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history.", "artist"=>{"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history."}}
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:20:in `create'
+  [1m[36mArtist Exists? (11.2ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Ernest Hemingway"], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:20:in `create'
+  [1m[35m (130.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/artists_controller.rb:20:in `create'
+Completed 422 Unprocessable Entity in 766ms (Views: 2.9ms | ActiveRecord: 179.2ms | Allocations: 11004)
+
+
+Started POST "/artists" for ::1 at 2020-08-10 21:32:37 -0400
+Processing by ArtistsController#create as */*
+  Parameters: {"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "years"=>"1899-1961", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076164/Oldmansea_qbvvvx.jpg", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history.", "artist"=>{"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "years"=>"1899-1961", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076164/Oldmansea_qbvvvx.jpg", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:20:in `create'
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Ernest Hemingway"], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:20:in `create'
+  [1m[36mArtist Create (5.0ms)[0m  [1m[32mINSERT INTO "artists" ("name", "profile_img", "years", "disorder", "work_example", "work_URL", "story", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Ernest Hemingway"], ["profile_img", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg"], ["years", "1899-1961"], ["disorder", "Bipolar Disorder"], ["work_example", "Old Man and The Sea (1951)"], ["work_URL", "https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076164/Oldmansea_qbvvvx.jpg"], ["story", "Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history."], ["created_at", "2020-08-11 01:32:37.596136"], ["updated_at", "2020-08-11 01:32:37.596136"]]
+  ↳ app/controllers/artists_controller.rb:20:in `create'
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:20:in `create'
+Completed 201 Created in 158ms (Views: 0.9ms | ActiveRecord: 8.8ms | Allocations: 4164)
+
+
+Started GET "/artists" for ::1 at 2020-08-10 21:32:48 -0400
+Processing by ArtistsController#index as */*
+  Parameters: {"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "years"=>"1899-1961", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076164/Oldmansea_qbvvvx.jpg", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history.", "artist"=>{"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "years"=>"1899-1961", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076164/Oldmansea_qbvvvx.jpg", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history."}}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1262)
+
+
+Started GET "/artists/11/symptoms" for ::1 at 2020-08-10 21:33:13 -0400
+Processing by SymptomsController#index as */*
+  Parameters: {"name"=>"Ernest Hemingway", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076141/1024px-ErnestHemingway_qitgv2.jpg", "years"=>"1899-1961", "disorder"=>"Bipolar Disorder", "work_example"=>"Old Man and The Sea (1951)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1597076164/Oldmansea_qbvvvx.jpg", "story"=>"Although he was one of the most brilliant writers of the twentieth century, Ernest Hemingway had unknowingly been suffering from bipolar disorder, a mental health illness that was not easily recognized. After consistently injuring his head and a plane crash in 1954, he was left in pain and ill health for the rest of his life. He was able to write throughout the many electroshock treatments and still produced some of the most moving pieces in American literary history.", "artist_id"=>"11", "symptom"=>{"name"=>"Ernest Hemingway"}}
+  [1m[36mSymptom Load (9.5ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  ↳ app/controllers/symptoms_controller.rb:8:in `index'
+Completed 200 OK in 251ms (Views: 167.2ms | ActiveRecord: 104.5ms | Allocations: 4181)
+
+
+Started POST "/artists/11/symptoms" for ::1 at 2020-08-10 21:33:46 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for SymptomsController):
+  
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/artists/11/symptoms" for ::1 at 2020-08-10 21:34:21 -0400
+Processing by SymptomsController#create as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "symptom"=>{"name"=>"fatigue"}}
+Completed 404 Not Found in 127ms (ActiveRecord: 30.8ms | Allocations: 5437)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist without an ID):
+  
+app/controllers/symptoms_controller.rb:19:in `create'
+Started GET "/artists/11" for ::1 at 2020-08-10 21:34:42 -0400
+Processing by ArtistsController#show as */*
+  Parameters: {"name"=>"fatigue", "id"=>"11", "artist"=>{"name"=>"fatigue"}}
+  [1m[36mArtist Load (5.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 5.5ms | Allocations: 6914)
+
+
+Started POST "/artists/11/symptoms" for ::1 at 2020-08-10 21:34:53 -0400
+Processing by SymptomsController#create as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "symptom"=>{"name"=>"fatigue"}}
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 226)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist without an ID):
+  
+app/controllers/symptoms_controller.rb:19:in `create'
+Started GET "/artists/11" for ::1 at 2020-08-10 21:36:17 -0400
+Processing by ArtistsController#show as */*
+  Parameters: {"name"=>"fatigue", "id"=>"11", "artist"=>{"name"=>"fatigue"}}
+  [1m[36mArtist Load (9.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 29ms (Views: 7.1ms | ActiveRecord: 9.0ms | Allocations: 865)
+
+
+Started GET "/artists/11/symptoms" for ::1 at 2020-08-10 21:36:34 -0400
+Processing by SymptomsController#index as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "symptom"=>{"name"=>"fatigue"}}
+  [1m[36mSymptom Load (0.7ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms"[0m
+  ↳ app/controllers/symptoms_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.7ms | Allocations: 1212)
+
+
+Started GET "/artists/11/symptoms" for ::1 at 2020-08-10 21:38:40 -0400
+Processing by SymptomsController#index as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "symptom"=>{"name"=>"fatigue"}}
+Completed 404 Not Found in 62ms (ActiveRecord: 42.2ms | Allocations: 2459)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist without an ID):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/11/" for ::1 at 2020-08-10 21:38:51 -0400
+Processing by ArtistsController#show as */*
+  Parameters: {"name"=>"fatigue", "id"=>"11", "artist"=>{"name"=>"fatigue"}}
+  [1m[36mArtist Load (20.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 50ms (Views: 1.3ms | ActiveRecord: 20.3ms | Allocations: 6947)
+
+
+Started GET "/artists/11/symptoms" for ::1 at 2020-08-10 21:39:50 -0400
+Processing by SymptomsController#index as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "symptom"=>{"name"=>"fatigue"}}
+  [1m[36mArtist Load (9.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mSymptom Load (32.2ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/symptoms_controller.rb:10:in `index'
+Completed 200 OK in 335ms (Views: 46.0ms | ActiveRecord: 296.2ms | Allocations: 9906)
+
+
+Started POST "/artists/11/symptoms" for ::1 at 2020-08-10 21:39:57 -0400
+Processing by SymptomsController#create as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "symptom"=>{"name"=>"fatigue"}}
+Completed 404 Not Found in 280ms (ActiveRecord: 211.2ms | Allocations: 3121)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist without an ID):
+  
+app/controllers/symptoms_controller.rb:21:in `create'
+Started POST "/artists/11/symptoms" for ::1 at 2020-08-10 21:40:17 -0400
+Processing by SymptomsController#create as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "symptom"=>{"name"=>"fatigue"}}
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:21:in `create'
+  [1m[35m (17.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/symptoms_controller.rb:23:in `create'
+  [1m[36mSymptom Create (53.6ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fatigue"], ["artist_id", 11], ["created_at", "2020-08-11 01:40:18.003098"], ["updated_at", "2020-08-11 01:40:18.003098"]]
+  ↳ app/controllers/symptoms_controller.rb:23:in `create'
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/symptoms_controller.rb:23:in `create'
+Completed 500 Internal Server Error in 982ms (ActiveRecord: 105.4ms | Allocations: 52625)
+
+
+  
+NoMethodError (undefined method `symptom_url' for #<SymptomsController:0x00007faea853cb00>
+Did you mean?  symptom_params):
+  
+app/controllers/symptoms_controller.rb:26:in `create'
+Started POST "/artists/11/symptoms" for ::1 at 2020-08-10 21:41:32 -0400
+Processing by SymptomsController#create as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "symptom"=>{"name"=>"fatigue"}}
+  [1m[36mArtist Load (5.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:21:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/symptoms_controller.rb:23:in `create'
+  [1m[36mSymptom Create (52.5ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fatigue"], ["artist_id", 11], ["created_at", "2020-08-11 01:41:33.831700"], ["updated_at", "2020-08-11 01:41:33.831700"]]
+  ↳ app/controllers/symptoms_controller.rb:23:in `create'
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/symptoms_controller.rb:23:in `create'
+Completed 201 Created in 372ms (Views: 0.4ms | ActiveRecord: 120.0ms | Allocations: 15087)
+
+
+Started GET "/artists/10/resources" for ::1 at 2020-08-10 21:42:48 -0400
+Processing by ResourcesController#index as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"10", "resource"=>{"name"=>"fatigue"}}
+  [1m[36mResource Load (6.0ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  ↳ app/controllers/resources_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 17.1ms | ActiveRecord: 20.5ms | Allocations: 4670)
+
+
+Started GET "/artists/11/resources" for ::1 at 2020-08-10 21:42:54 -0400
+Processing by ResourcesController#index as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "resource"=>{"name"=>"fatigue"}}
+  [1m[36mResource Load (31.9ms)[0m  [1m[34mSELECT "resources".* FROM "resources"[0m
+  ↳ app/controllers/resources_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 4.4ms | ActiveRecord: 31.9ms | Allocations: 1100)
+
+
+Started GET "/artists/11/resources" for ::1 at 2020-08-10 21:43:38 -0400
+Processing by ResourcesController#index as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "resource"=>{"name"=>"fatigue"}}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (0.3ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 35ms (Views: 1.7ms | ActiveRecord: 9.5ms | Allocations: 9937)
+
+
+Started GET "/artists/11/resources" for ::1 at 2020-08-10 21:46:44 -0400
+Processing by ResourcesController#index as */*
+  Parameters: {"name"=>"fatigue", "artist_id"=>"11", "resource"=>{"name"=>"fatigue"}}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (0.8ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 67ms (Views: 3.8ms | ActiveRecord: 10.4ms | Allocations: 9936)
+
+
+Started POST "/artists/11/resources" for ::1 at 2020-08-10 21:47:30 -0400
+Processing by ResourcesController#create as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mArtist Load (2.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:24:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.dbsalliance.org/"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Create (0.8ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["link", "https://www.dbsalliance.org/"], ["artist_id", 11], ["created_at", "2020-08-11 01:47:30.480172"], ["updated_at", "2020-08-11 01:47:30.480172"]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (4.0ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://www.dbsalliance.org/"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+Completed 500 Internal Server Error in 275ms (ActiveRecord: 46.8ms | Allocations: 49219)
+
+
+  
+NoMethodError (undefined method `resource_url' for #<ResourcesController:0x00007faea7b88708>
+Did you mean?  resource_params):
+  
+app/controllers/resources_controller.rb:29:in `create'
+Started POST "/artists/11/resources" for ::1 at 2020-08-10 21:47:53 -0400
+Processing by ResourcesController#create as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:24:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.dbsalliance.org/"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.dbsalliance.org/"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[35m (2.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+Completed 422 Unprocessable Entity in 102ms (Views: 0.3ms | ActiveRecord: 25.2ms | Allocations: 22124)
+
+
+Started POST "/artists/11/resources" for ::1 at 2020-08-10 21:47:59 -0400
+Processing by ResourcesController#create as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:24:in `create'
+  [1m[35m (5.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.dbsalliance.org/"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (3.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (18.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.dbsalliance.org/"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[35m (4.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+Completed 422 Unprocessable Entity in 112ms (Views: 0.2ms | ActiveRecord: 38.4ms | Allocations: 9852)
+
+
+Started GET "/artists/11/resources" for ::1 at 2020-08-10 21:48:06 -0400
+Processing by ResourcesController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mArtist Load (35.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (6.5ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 47ms (Views: 2.7ms | ActiveRecord: 42.1ms | Allocations: 1686)
+
+
+Started DELETE "/artists/11/resources" for ::1 at 2020-08-10 21:48:34 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/artists/11/resources"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/artists/11/resources" for ::1 at 2020-08-10 21:50:47 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/artists/11/resources"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/artists/11/resources/0" for ::1 at 2020-08-10 21:51:21 -0400
+Processing by ResourcesController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"0", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mResource Load (0.8ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:52:in `set_resource'
+Completed 404 Not Found in 15ms (ActiveRecord: 13.8ms | Allocations: 849)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Resource with 'id'=0):
+  
+app/controllers/resources_controller.rb:52:in `set_resource'
+Started GET "/artists/11/resources/" for ::1 at 2020-08-10 21:51:32 -0400
+Processing by ResourcesController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (0.6ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 89ms (Views: 11.1ms | ActiveRecord: 49.7ms | Allocations: 13491)
+
+
+Started GET "/artists/11/resources/9" for ::1 at 2020-08-10 21:51:37 -0400
+Processing by ResourcesController#show as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"9", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mResource Load (0.9ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:52:in `set_resource'
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:15:in `show'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 1430)
+
+
+Started DELETE "/artists/11/resources/9" for ::1 at 2020-08-10 21:51:41 -0400
+Processing by ResourcesController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"9", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mResource Load (59.0ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:52:in `set_resource'
+  [1m[35m (8.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:46:in `destroy'
+  [1m[36mResource Destroy (0.8ms)[0m  [1m[31mDELETE FROM "resources" WHERE "resources"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/resources_controller.rb:46:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/resources_controller.rb:46:in `destroy'
+Completed 204 No Content in 77ms (ActiveRecord: 69.3ms | Allocations: 2525)
+
+
+Started GET "/artists/11/resources/9" for ::1 at 2020-08-10 21:51:47 -0400
+Processing by ResourcesController#show as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"9", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mResource Load (0.8ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:52:in `set_resource'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.8ms | Allocations: 662)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Resource with 'id'=9):
+  
+app/controllers/resources_controller.rb:52:in `set_resource'
+Started GET "/artists/11/resources/" for ::1 at 2020-08-10 21:51:56 -0400
+Processing by ResourcesController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mArtist Load (4.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (14.8ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 25ms (Views: 2.3ms | ActiveRecord: 19.6ms | Allocations: 1521)
+
+
+Started POST "/artists/11/resources/" for ::1 at 2020-08-10 21:52:04 -0400
+Processing by ResourcesController#create as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:24:in `create'
+  [1m[35m (19.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.dbsalliance.org/"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Create (8.4ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["link", "https://www.dbsalliance.org/"], ["artist_id", 11], ["created_at", "2020-08-11 01:52:04.193426"], ["updated_at", "2020-08-11 01:52:04.193426"]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://www.dbsalliance.org/"], ["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+Completed 201 Created in 73ms (Views: 3.0ms | ActiveRecord: 39.9ms | Allocations: 9906)
+
+
+Started POST "/artists/11/symptoms" for ::1 at 2020-08-10 21:52:09 -0400
+Processing by SymptomsController#create as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (3.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:21:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/symptoms_controller.rb:23:in `create'
+  [1m[36mSymptom Create (0.7ms)[0m  [1m[32mINSERT INTO "symptoms" ("name", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "DBSA: Depression and Bipolar Support Alliance"], ["artist_id", 11], ["created_at", "2020-08-11 01:52:09.972195"], ["updated_at", "2020-08-11 01:52:09.972195"]]
+  ↳ app/controllers/symptoms_controller.rb:23:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/symptoms_controller.rb:23:in `create'
+Completed 201 Created in 32ms (Views: 0.6ms | ActiveRecord: 10.7ms | Allocations: 6802)
+
+
+Started GET "/artists/11/symptoms" for ::1 at 2020-08-10 21:52:21 -0400
+Processing by SymptomsController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (19.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mSymptom Load (2.3ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/symptoms_controller.rb:10:in `index'
+Completed 200 OK in 27ms (Views: 2.8ms | ActiveRecord: 22.1ms | Allocations: 1881)
+
+
+Started DELETE "/artists/11/symptoms" for ::1 at 2020-08-10 21:52:35 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/artists/11/symptoms"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artists/11/symptoms" for ::1 at 2020-08-10 21:52:50 -0400
+Processing by SymptomsController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mSymptom Load (0.7ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/symptoms_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 1.1ms | Allocations: 1842)
+
+
+Started GET "/artists/11/symptoms/12" for ::1 at 2020-08-10 21:52:56 -0400
+Processing by SymptomsController#show as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"12", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mSymptom Load (3.2ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:40:in `set_symptom'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 3.2ms | Allocations: 881)
+
+
+Started DELETE "/artists/11/symptoms/12" for ::1 at 2020-08-10 21:53:01 -0400
+Processing by SymptomsController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"12", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mSymptom Load (19.9ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:40:in `set_symptom'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/symptoms_controller.rb:34:in `destroy'
+  [1m[36mSymptom Destroy (1.4ms)[0m  [1m[31mDELETE FROM "symptoms" WHERE "symptoms"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/symptoms_controller.rb:34:in `destroy'
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/symptoms_controller.rb:34:in `destroy'
+Completed 204 No Content in 39ms (ActiveRecord: 33.3ms | Allocations: 2500)
+
+
+Started DELETE "/artists/11/symptoms/11" for ::1 at 2020-08-10 21:53:05 -0400
+Processing by SymptomsController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"11", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mSymptom Load (0.6ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:40:in `set_symptom'
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/symptoms_controller.rb:34:in `destroy'
+  [1m[36mSymptom Destroy (2.1ms)[0m  [1m[31mDELETE FROM "symptoms" WHERE "symptoms"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/symptoms_controller.rb:34:in `destroy'
+  [1m[35m (10.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/symptoms_controller.rb:34:in `destroy'
+Completed 204 No Content in 22ms (ActiveRecord: 14.6ms | Allocations: 2500)
+
+
+Started GET "/artists/11/symptoms/" for ::1 at 2020-08-10 21:53:13 -0400
+Processing by SymptomsController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mSymptom Load (0.3ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/symptoms_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 1.1ms | Allocations: 1627)
+
+
+Started GET "/artists/11/" for ::1 at 2020-08-10 21:53:19 -0400
+Processing by ArtistsController#show as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "id"=>"11", "artist"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (23.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 28ms (Views: 1.1ms | ActiveRecord: 23.1ms | Allocations: 909)
+
+
+Started DELETE "/artists/11/" for ::1 at 2020-08-10 21:53:24 -0400
+Processing by ArtistsController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "id"=>"11", "artist"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (14.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+  [1m[36mArtist Destroy (6.0ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+  [1m[35m (12.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 34.3ms | Allocations: 2667)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "artists" violates foreign key constraint "fk_rails_ba36a2cda3" on table "resources"
+DETAIL:  Key (id)=(11) is still referenced from table "resources".
+):
+  
+app/controllers/artists_controller.rb:38:in `destroy'
+Started DELETE "/artists/11" for ::1 at 2020-08-10 21:53:32 -0400
+Processing by ArtistsController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "id"=>"11", "artist"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (22.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (12.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+  [1m[36mArtist Destroy (4.5ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 40.3ms | Allocations: 2666)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "artists" violates foreign key constraint "fk_rails_ba36a2cda3" on table "resources"
+DETAIL:  Key (id)=(11) is still referenced from table "resources".
+):
+  
+app/controllers/artists_controller.rb:38:in `destroy'
+Started GET "/artists/" for ::1 at 2020-08-10 21:56:04 -0400
+Processing by ArtistsController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (9.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 4.0ms | ActiveRecord: 9.2ms | Allocations: 1247)
+
+
+Started GET "/artists/11" for ::1 at 2020-08-10 21:56:22 -0400
+Processing by ArtistsController#show as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "id"=>"11", "artist"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 866)
+
+
+Started DELETE "/artists/11" for ::1 at 2020-08-10 21:56:26 -0400
+Processing by ArtistsController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "id"=>"11", "artist"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+  [1m[36mArtist Destroy (70.8ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 72.0ms | Allocations: 2667)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "artists" violates foreign key constraint "fk_rails_ba36a2cda3" on table "resources"
+DETAIL:  Key (id)=(11) is still referenced from table "resources".
+):
+  
+app/controllers/artists_controller.rb:38:in `destroy'
+Started GET "/artists/11/resources" for ::1 at 2020-08-10 21:56:40 -0400
+Processing by ResourcesController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (0.3ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.9ms | Allocations: 1646)
+
+
+Started DELETE "/artists/11/resources" for ::1 at 2020-08-10 21:56:45 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/artists/11/resources"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artists/11/resources" for ::1 at 2020-08-10 21:56:57 -0400
+Processing by ResourcesController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (0.5ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.8ms | Allocations: 1645)
+
+
+Started GET "/artists/11/resources/10" for ::1 at 2020-08-10 21:57:01 -0400
+Processing by ResourcesController#show as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"10", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mResource Load (1.7ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:52:in `set_resource'
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:15:in `show'
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 2.6ms | Allocations: 1429)
+
+
+Started DELETE "/artists/11/resources/10" for ::1 at 2020-08-10 21:57:03 -0400
+Processing by ResourcesController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"10", "resource"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/"}}
+  [1m[36mResource Load (6.7ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:52:in `set_resource'
+  [1m[35m (38.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:46:in `destroy'
+  [1m[36mResource Destroy (3.7ms)[0m  [1m[31mDELETE FROM "resources" WHERE "resources"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/resources_controller.rb:46:in `destroy'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/resources_controller.rb:46:in `destroy'
+Completed 204 No Content in 58ms (ActiveRecord: 49.8ms | Allocations: 2504)
+
+
+Started GET "/artists/11/symptoms" for ::1 at 2020-08-10 21:57:13 -0400
+Processing by SymptomsController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mSymptom Load (5.7ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/symptoms_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 3.4ms | ActiveRecord: 6.3ms | Allocations: 1630)
+
+
+Started GET "/artists/11/symptoms/10" for ::1 at 2020-08-10 21:57:18 -0400
+Processing by SymptomsController#show as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"10", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mSymptom Load (26.3ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:40:in `set_symptom'
+Completed 200 OK in 29ms (Views: 0.6ms | ActiveRecord: 26.3ms | Allocations: 770)
+
+
+Started DELETE "/artists/11/symptoms/10" for ::1 at 2020-08-10 21:57:21 -0400
+Processing by SymptomsController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"11", "id"=>"10", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mSymptom Load (2.0ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:40:in `set_symptom'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/symptoms_controller.rb:34:in `destroy'
+  [1m[36mSymptom Destroy (1.0ms)[0m  [1m[31mDELETE FROM "symptoms" WHERE "symptoms"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/symptoms_controller.rb:34:in `destroy'
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/symptoms_controller.rb:34:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 11.9ms | Allocations: 2500)
+
+
+Started DELETE "/artists/11/" for ::1 at 2020-08-10 21:57:25 -0400
+Processing by ArtistsController#destroy as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "id"=>"11", "artist"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+  [1m[36mArtist Destroy (1.0ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:38:in `destroy'
+Completed 204 No Content in 9ms (ActiveRecord: 3.1ms | Allocations: 2515)
+
+
+Started GET "/artists/" for ::1 at 2020-08-10 21:57:30 -0400
+Processing by ArtistsController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (48.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 52ms (Views: 3.6ms | ActiveRecord: 48.5ms | Allocations: 1054)
+
+

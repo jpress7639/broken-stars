@@ -3,12 +3,12 @@ class Artist < ApplicationRecord
     has_many :resources
 
     validates :name, presence: true, uniqueness: true
-    validates :profile_img, presence: true, uniqueness: true
-    validates :years, presence: true, uniqueness: true
-    validates :disorder, presence: true, uniqueness: true
-    validates :work_example, presence: true, uniqueness: true
-    validates :work_URL, presence: true, uniqueness: true
-    validates :story, presence: true, uniqueness: true, length: { maximum: 1000 }
+    validates :profile_img, presence: true
+    validates :years, presence: true
+    validates :disorder, presence: true
+    validates :work_example, presence: true
+    validates :work_URL, presence: true
+    validates :story, presence: true, length: { minimum: 100 }
 
     # def name_validation
     #     errors.add(:name, :invalid_characters, not_allowed: "!@#%")
