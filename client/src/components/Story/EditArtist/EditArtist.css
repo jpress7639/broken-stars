@@ -1,0 +1,15 @@
+form.edit-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form.edit-form input{
+    margin: 10px;
+}
+
+form.edit-form input.long{
+    padding: 10px;
+    height: 150px;
+    width: 100px;
+}

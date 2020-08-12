@@ -5,7 +5,7 @@ export const getAllArtists = async () => {
     return resp.data;
 }
 
-export const getOneArtist = async () => {
+export const getOneArtist = async (id) => {
     const resp = await api.get(`/artists/${id}`)
     return resp.data;
 }
