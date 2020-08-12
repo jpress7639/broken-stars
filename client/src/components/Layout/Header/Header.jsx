@@ -5,6 +5,7 @@ class Header {
     render() {
         return(
             <>
+            <Link to='/'><h2>Broken Stars</h2></Link>
             </>
         )
     }

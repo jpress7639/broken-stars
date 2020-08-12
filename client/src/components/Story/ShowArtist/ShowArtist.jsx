@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getOneArtist } from '../../../services/artists'
+import HandleResources from '../CreateArtist/Handle/HandleResources'
 
 export default function ShowArtist(props) {
     const [artist, setArtist] = useState([])
@@ -25,6 +26,11 @@ export default function ShowArtist(props) {
     <p>{artist.work_example}</p>
     <Link to={`/artists/${artist.id}/edit/`}><button>Update</button></Link>
     <Link to={`/artists/${artist.id}/symptoms/`}><button>View Artist Symptoms</button></Link>
+    <footer>
+    <HandleResources 
+    {...props}
+    artist={artist}/>
+    </footer>
         </div>
     )
 }

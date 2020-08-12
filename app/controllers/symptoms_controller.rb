@@ -1,5 +1,6 @@
 class SymptomsController < ApplicationController
   before_action :set_symptom, only: [:show, :destroy]
+  before_action  only: [:create, :destroy]
 
   # GET /symptoms
   def index

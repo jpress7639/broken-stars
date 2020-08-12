@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import { postArtist } from '../../../services/artists'
+import './CreateArtist.css'
 
 export default function CreateArtist(props) {
     const [formData, setFormData] = useState({
@@ -15,12 +16,12 @@ export default function CreateArtist(props) {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const newArtist = await postArtist(formData)
-        props.setFoods({
+        props.setFormData({
             ...props.artist,
             newArtist
         })
         alert(`Artist Created!`)
-        props.history.push('/artists')
+        props.history.push(`/artists/${newArtist.id}/symptoms`)
     }
 
     return(
@@ -54,7 +55,7 @@ export default function CreateArtist(props) {
                 Image of Work:
             <input type="text" name="work_URL" value={formData.work_URL} onChange={handleChange}/>
             </label>
-            <Link to={`/artists/:new_id/symptoms`}><button>Add Your Symptoms</button></Link>
+           <button>Add Your Symptoms</button>
         </form>
         </>
     )

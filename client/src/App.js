@@ -5,17 +5,17 @@ import Main from './components/Main/Main';
 import ShowArtist from './components/Story/ShowArtist/ShowArtist';
 import { getOneArtist, getAllArtists } from './services/artists';
 import EditArtist from './components/Story/EditArtist/EditArtist';
-import HandleSymptoms from './components/Story/CreateArtist/HandleSymptoms';
+import HandleSymptoms from './components/Story/CreateArtist/Handle/HandleSymptoms';
 import { readAllSymptoms } from './services/symptoms';
 import CreateArtist from './components/Story/CreateArtist/CreateArtist';
+import HandleResources from './components/Story/CreateArtist/Handle/HandleResources';
 
 function App() {
   const [artist, setStories] = useState([])
-  const [symptoms, displaySymptoms] = useState([])
+
 
   useEffect(() => {
     setArtists()
-    getSymptoms()
   }, [])
 
   const setArtists = async () => {
@@ -23,10 +23,6 @@ function App() {
     setStories(data)
   }
 
-  const getSymptoms = async () => {
-    const data = await readAllSymptoms()
-    displaySymptoms(data)
-  }
 
   return (
 
@@ -34,6 +30,12 @@ function App() {
       <Route exact path= '/' render={() => (
       <Main /> 
       )}/>
+        <Route exact path='/artists/new/create' render={(props) => (
+        <CreateArtist 
+        {...props}
+        artist = {artist}
+        />
+        )}/>
       <Route exact path= '/artists/:id/' render={(props) => (
       <ShowArtist 
       {...props}
@@ -46,17 +48,16 @@ function App() {
         artist={artist}
         />
       )}/>
-      <Route path='/artists/new' render={(props) => (
-        <CreateArtist 
+      <Route exact path={`/artists/:id/symptoms`} render={(props) => (
+        <HandleSymptoms 
         {...props}
-        artist = {artist}
-        symptoms = {symptoms}
+        artist={artist}
         />
       )}/>
-      <Route exact path={`/artists/:id/symptoms`} render={() => (
-        <HandleSymptoms 
+      <Route exact path={`/artists/:id/resources`} render={(props) => (
+        <HandleResources
+        {...props}
         artist={artist}
-        symptoms={symptoms}
         />
       )}/>
     </div>
