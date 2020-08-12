@@ -2,7 +2,7 @@ import api from './api-helper'
 
 
 export const readAllSymptoms = async () => {
-    const resp = await api.get('/artists/:artist_id/symptoms')
+    const resp = await api.get(`/artists/:artist_id/symptoms`)
     return resp.data;
 }
 
@@ -12,7 +12,7 @@ export const readOneSymptom = async (id) => {
 }
 
 export const createSymptom = async (symptomData) => {
-    const resp = await api.post('/artists/:artist_id/symptom', resourceData)
+    const resp = await api.post('/artists/:artist_id/symptom', symptomData)
     return resp.data;
 }
 

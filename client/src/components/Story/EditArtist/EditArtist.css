@@ -11,5 +11,6 @@ form.edit-form input{
 form.edit-form input.long{
     padding: 10px;
     height: 150px;
-    width: 100px;
+    width: 500px;
+    line-height: 10px;
 }

@@ -5497,3 +5497,2280 @@ Processing by ArtistsController#index as HTML
 Completed 200 OK in 239ms (Views: 4.8ms | ActiveRecord: 234.1ms | Allocations: 1449)
 
 
+Started GET "/artists" for ::1 at 2020-08-12 09:12:57 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (12.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 56ms (Views: 24.0ms | ActiveRecord: 26.0ms | Allocations: 10842)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:12:57 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 138ms (Views: 137.6ms | ActiveRecord: 0.5ms | Allocations: 1440)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:13:09 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 19ms (Views: 4.9ms | ActiveRecord: 2.3ms | Allocations: 1329)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:19:02 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (10.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 50ms (Views: 12.3ms | ActiveRecord: 10.4ms | Allocations: 1511)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:19:11 -0400
+Started GET "/artists" for ::1 at 2020-08-12 09:19:11 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 494ms (Views: 2.7ms | ActiveRecord: 470.0ms | Allocations: 908)
+
+
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (49.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 77ms (Views: 27.2ms | ActiveRecord: 49.1ms | Allocations: 1498)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:19:42 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (3092.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 3099ms (Views: 5.2ms | ActiveRecord: 3092.2ms | Allocations: 1449)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:20:03 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (68.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 73ms (Views: 3.7ms | ActiveRecord: 68.7ms | Allocations: 1459)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:20:08 -0400
+Started GET "/artists" for ::1 at 2020-08-12 09:20:08 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (6.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 10.2ms | Allocations: 1318)
+
+
+  [1m[36mArtist Load (11.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 3.4ms | ActiveRecord: 11.3ms | Allocations: 2489)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:20:11 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.5ms | Allocations: 1440)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:20:12 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (7.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 7.5ms | Allocations: 858)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:20:44 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (529.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 533ms (Views: 3.8ms | ActiveRecord: 529.1ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:20:54 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (27.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 41ms (Views: 11.5ms | ActiveRecord: 27.9ms | Allocations: 1442)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:21:16 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (36.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 41ms (Views: 4.4ms | ActiveRecord: 36.2ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:21:16 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (71.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 75ms (Views: 3.4ms | ActiveRecord: 71.1ms | Allocations: 1440)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:21:18 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (2.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 2.4ms | Allocations: 858)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:26:41 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (307.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 311ms (Views: 3.6ms | ActiveRecord: 307.1ms | Allocations: 1444)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:28:26 -0400
+Started GET "/artists" for ::1 at 2020-08-12 09:28:26 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (5.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 5.1ms | Allocations: 859)
+
+
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 1.7ms | Allocations: 1498)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:29:14 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (27.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 4.0ms | ActiveRecord: 27.6ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:30:18 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (82.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 87ms (Views: 3.6ms | ActiveRecord: 82.8ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:30:21 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (35.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 41ms (Views: 4.9ms | ActiveRecord: 35.9ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:30:30 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (98.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 106ms (Views: 7.3ms | ActiveRecord: 98.3ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:30:30 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (47.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 53ms (Views: 5.4ms | ActiveRecord: 47.6ms | Allocations: 1440)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:30:31 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (10.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 11.4ms | Allocations: 890)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:30:41 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (34.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 38ms (Views: 3.4ms | ActiveRecord: 34.0ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:33:28 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (3.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 3.4ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:33:39 -0400
+Started GET "/artists/18" for ::1 at 2020-08-12 09:33:39 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (26.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 4.1ms | ActiveRecord: 26.2ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:33:39 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (1.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 1.6ms | Allocations: 859)
+
+
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (10.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 5.0ms | ActiveRecord: 10.1ms | Allocations: 1440)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:33:40 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (11.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 11.9ms | Allocations: 858)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:35:03 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (161.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 164ms (Views: 2.1ms | ActiveRecord: 161.3ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:35:15 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (289.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 293ms (Views: 3.5ms | ActiveRecord: 289.7ms | Allocations: 1441)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:35:40 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+Started GET "/artists" for ::1 at 2020-08-12 09:35:40 -0400
+  [1m[36mArtist Load (179.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 184ms (Views: 0.8ms | ActiveRecord: 179.1ms | Allocations: 1215)
+
+
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (210.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 228ms (Views: 17.9ms | ActiveRecord: 210.2ms | Allocations: 1449)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:35:59 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 1.3ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:37:30 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (55.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 59ms (Views: 3.2ms | ActiveRecord: 55.2ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:37:38 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 1.5ms | Allocations: 1440)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 09:38:34 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (3.2ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 35ms (Views: 0.6ms | ActiveRecord: 10.9ms | Allocations: 4341)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:41:27 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (29.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 3.7ms | ActiveRecord: 29.3ms | Allocations: 1441)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 09:41:30 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 1.1ms | Allocations: 3872)
+
+
+Started GET "/artists/:id" for ::1 at 2020-08-12 09:41:32 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mArtist Load (1.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.8ms | Allocations: 670)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:id):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists/:id" for ::1 at 2020-08-12 09:41:40 -0400
+Started GET "/artists" for ::1 at 2020-08-12 09:41:40 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mArtist Load (3.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 12ms (ActiveRecord: 3.6ms | Allocations: 664)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:id):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 1.6ms | Allocations: 4902)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:42:21 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (15.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 9.8ms | ActiveRecord: 15.8ms | Allocations: 1441)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 09:42:25 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (23.2ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 74ms (Views: 0.3ms | ActiveRecord: 25.0ms | Allocations: 3876)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:42:26 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 09:42:49 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"1854-1890"}, "id"=>"18"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "1854-1890"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Update (7.1ms)[0m  [1m[33mUPDATE "artists" SET "name" = $1, "updated_at" = $2 WHERE "artists"."id" = $3[0m  [["name", "1854-1890"], ["updated_at", "2020-08-12 13:42:49.632193"], ["id", 18]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 33ms (Views: 0.6ms | ActiveRecord: 8.9ms | Allocations: 4656)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:42:51 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (18.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 23ms (Views: 1.1ms | ActiveRecord: 18.7ms | Allocations: 859)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 09:43:00 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Update (2.3ms)[0m  [1m[33mUPDATE "artists" SET "name" = $1, "updated_at" = $2 WHERE "artists"."id" = $3[0m  [["name", "Vincent Van Gogh"], ["updated_at", "2020-08-12 13:43:00.524060"], ["id", 18]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 30ms (Views: 0.3ms | ActiveRecord: 7.9ms | Allocations: 4695)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:43:02 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 859)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:43:44 -0400
+Started GET "/artists" for ::1 at 2020-08-12 09:43:44 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (1.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.7ms | Allocations: 868)
+
+
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (362.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 368ms (Views: 5.2ms | ActiveRecord: 362.7ms | Allocations: 1451)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:43:56 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 16ms (Views: 4.5ms | ActiveRecord: 1.1ms | Allocations: 891)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:44:43 -0400
+Started GET "/artists" for ::1 at 2020-08-12 09:44:43 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (4.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 3.6ms | ActiveRecord: 4.4ms | Allocations: 1441)
+
+
+  [1m[36mArtist Load (233.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 236ms (Views: 0.5ms | ActiveRecord: 233.7ms | Allocations: 2887)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 09:45:28 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Van Gogh"}, "id"=>"18"}
+  [1m[36mArtist Load (3.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 25ms (Views: 3.5ms | ActiveRecord: 8.4ms | Allocations: 3795)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:45:29 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.3ms | Allocations: 859)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:47:17 -0400
+Started GET "/artists" for ::1 at 2020-08-12 09:47:17 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (5.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 5.1ms | Allocations: 859)
+
+
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (3.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 3.3ms | Allocations: 1441)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:47:24 -0400
+Started GET "/artists" for ::1 at 2020-08-12 09:47:24 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Processing by ArtistsController#index as HTML
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 1163)
+
+
+  [1m[36mArtist Load (564.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 567ms (Views: 2.8ms | ActiveRecord: 564.2ms | Allocations: 1671)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:47:51 -0400
+Started GET "/artists" for ::1 at 2020-08-12 09:47:51 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.8ms | Allocations: 859)
+
+
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (2.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 2.5ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:48:26 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (31.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 36ms (Views: 3.7ms | ActiveRecord: 31.3ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:48:40 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:49:27 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (42.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 51ms (Views: 7.9ms | ActiveRecord: 42.3ms | Allocations: 1441)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 09:49:43 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"undefined"=>"1854-1890"}, "id"=>"18"}
+  [1m[36mArtist Load (9.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+[31mUnpermitted parameter: :undefined[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (26.2ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 65ms (Views: 0.5ms | ActiveRecord: 36.5ms | Allocations: 3776)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 09:49:45 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.6ms | Allocations: 859)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:53:35 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (135.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 140ms (Views: 3.4ms | ActiveRecord: 135.0ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:54:05 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (3.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 3.1ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 09:55:17 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (202.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 209ms (Views: 6.5ms | ActiveRecord: 202.4ms | Allocations: 1441)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 10:01:03 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (31.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (25.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 132ms (Views: 0.7ms | ActiveRecord: 61.0ms | Allocations: 3977)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 10:01:05 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.6ms | Allocations: 859)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:10:28 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 1.1ms | Allocations: 1499)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:10:55 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (5.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 5.1ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:17:06 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (9.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 7.2ms | ActiveRecord: 9.0ms | Allocations: 1499)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 10:18:43 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 5.4ms | Allocations: 3917)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 10:18:44 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 1.5ms | Allocations: 859)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:29:33 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (96.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 667ms (Views: 569.3ms | ActiveRecord: 96.9ms | Allocations: 1502)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:29:41 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (21.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 28ms (Views: 5.7ms | ActiveRecord: 21.6ms | Allocations: 1442)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:29:49 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 1.3ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:29:56 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 1.0ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:30:13 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (42.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 50ms (Views: 7.7ms | ActiveRecord: 42.4ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:31:46 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (7.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 6.6ms | ActiveRecord: 7.0ms | Allocations: 1441)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 10:31:55 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1854-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (3.3ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Update (4.6ms)[0m  [1m[33mUPDATE "artists" SET "years" = $1, "updated_at" = $2 WHERE "artists"."id" = $3[0m  [["years", "1854-1890"], ["updated_at", "2020-08-12 14:31:56.095858"], ["id", 18]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 39ms (Views: 1.5ms | ActiveRecord: 11.4ms | Allocations: 4747)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 10:31:57 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (49.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 53ms (Views: 1.2ms | ActiveRecord: 49.7ms | Allocations: 859)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 10:32:15 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (65.0ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Update (1.6ms)[0m  [1m[33mUPDATE "artists" SET "years" = $1, "updated_at" = $2 WHERE "artists"."id" = $3[0m  [["years", "1853-1890"], ["updated_at", "2020-08-12 14:32:15.899169"], ["id", 18]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 78ms (Views: 0.4ms | ActiveRecord: 68.9ms | Allocations: 4697)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 10:32:17 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (29.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 33ms (Views: 1.0ms | ActiveRecord: 29.6ms | Allocations: 859)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 10:33:34 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Willem Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Willem Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Update (3.4ms)[0m  [1m[33mUPDATE "artists" SET "name" = $1, "updated_at" = $2 WHERE "artists"."id" = $3[0m  [["name", "Vincent Willem Van Gogh"], ["updated_at", "2020-08-12 14:33:35.087170"], ["id", 18]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 27ms (Views: 0.5ms | ActiveRecord: 14.0ms | Allocations: 4695)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 10:33:38 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (1.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 1.9ms | Allocations: 859)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 10:34:48 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Willem Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Willem Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 3868)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 10:34:50 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 859)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:34:57 -0400
+Started GET "/artists" for ::1 at 2020-08-12 10:34:57 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (12.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 7.5ms | ActiveRecord: 12.0ms | Allocations: 1441)
+
+
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (27.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 8.6ms | ActiveRecord: 27.5ms | Allocations: 1499)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 10:35:00 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 44ms (Views: 0.5ms | ActiveRecord: 29.0ms | Allocations: 891)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:45:56 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (6.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 3.4ms | ActiveRecord: 6.3ms | Allocations: 1500)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 10:46:00 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 1.1ms | Allocations: 892)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:46:31 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (23.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 3.9ms | ActiveRecord: 23.3ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:47:32 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (55.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 63ms (Views: 3.3ms | ActiveRecord: 55.7ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:47:41 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (258.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 265ms (Views: 5.9ms | ActiveRecord: 258.5ms | Allocations: 1444)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:48:07 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (18.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 4.5ms | ActiveRecord: 18.2ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:48:27 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (36.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 43ms (Views: 6.0ms | ActiveRecord: 36.6ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:48:51 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (153.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 161ms (Views: 6.2ms | ActiveRecord: 153.3ms | Allocations: 1442)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:50:21 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (43.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 50ms (Views: 5.2ms | ActiveRecord: 43.1ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:52:41 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (25.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 3.5ms | ActiveRecord: 25.9ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:52:49 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (5.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 5.1ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:53:00 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 1.8ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:53:33 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 1.3ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:53:40 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (195.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 201ms (Views: 4.9ms | ActiveRecord: 195.9ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:54:47 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 1.2ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:55:21 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (13.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 4.1ms | ActiveRecord: 13.2ms | Allocations: 1441)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 10:56:10 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 10:56:10 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (18.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 3.6ms | ActiveRecord: 18.7ms | Allocations: 1441)
+
+
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (2.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 18ms (ActiveRecord: 4.4ms | Allocations: 792)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists" for ::1 at 2020-08-12 10:56:34 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 10:56:34 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (10.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 8.3ms | ActiveRecord: 10.7ms | Allocations: 1546)
+
+
+  [1m[36mArtist Load (512.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 519ms (ActiveRecord: 512.6ms | Allocations: 2271)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists" for ::1 at 2020-08-12 11:00:04 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:00:04 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (25.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 3.7ms | ActiveRecord: 25.8ms | Allocations: 1440)
+
+
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (5.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 9ms (ActiveRecord: 5.8ms | Allocations: 672)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists" for ::1 at 2020-08-12 11:01:49 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:01:49 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (5.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 7.4ms | ActiveRecord: 5.4ms | Allocations: 1881)
+
+
+  [1m[36mArtist Load (139.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 142ms (ActiveRecord: 139.5ms | Allocations: 2260)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/18" for ::1 at 2020-08-12 11:02:00 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (2.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 858)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:08:42 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:08:42 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (5.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 3.7ms | ActiveRecord: 5.4ms | Allocations: 1859)
+
+
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 28ms (ActiveRecord: 1.4ms | Allocations: 760)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists" for ::1 at 2020-08-12 11:10:07 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:10:07 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 32ms (ActiveRecord: 3.8ms | Allocations: 703)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (101.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 230ms (Views: 128.4ms | ActiveRecord: 101.3ms | Allocations: 28725)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:10:29 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:10:29 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (29.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 3.4ms | ActiveRecord: 29.3ms | Allocations: 1873)
+
+
+  [1m[36mArtist Load (34.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 39ms (ActiveRecord: 34.4ms | Allocations: 2261)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists" for ::1 at 2020-08-12 11:10:46 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:10:46 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 16ms (ActiveRecord: 1.2ms | Allocations: 671)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (828.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 841ms (Views: 12.0ms | ActiveRecord: 828.6ms | Allocations: 58417)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 11:10:58 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 1.4ms | Allocations: 858)
+
+
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mSymptom Load (11.4ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."artist_id" = $1[0m  [["artist_id", 18]]
+Started GET "/artists" for ::1 at 2020-08-12 11:14:48 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (19.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 3.2ms | ActiveRecord: 19.1ms | Allocations: 1441)
+
+
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:14:54 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:14:54 -0400
+Processing by SymptomsController#index as HTML
+Processing by ArtistsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (11.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 15.1ms | ActiveRecord: 11.4ms | Allocations: 1527)
+
+
+  [1m[36mArtist Load (231.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 235ms (ActiveRecord: 231.4ms | Allocations: 2263)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/" for ::1 at 2020-08-12 11:17:50 -0400
+Processing by ArtistsController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (14.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 28ms (Views: 13.7ms | ActiveRecord: 14.3ms | Allocations: 1443)
+
+
+Started GET "/artists/19/symptoms" for ::1 at 2020-08-12 11:18:03 -0400
+Processing by SymptomsController#index as */*
+  Parameters: {"name"=>"DBSA: Depression and Bipolar Support Alliance", "link"=>"https://www.dbsalliance.org/", "artist_id"=>"19", "symptom"=>{"name"=>"DBSA: Depression and Bipolar Support Alliance"}}
+  [1m[36mArtist Load (4.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mSymptom Load (14.2ms)[0m  [1m[34mSELECT "symptoms".* FROM "symptoms" WHERE "symptoms"."artist_id" = $1[0m  [["artist_id", 19]]
+  ↳ app/controllers/symptoms_controller.rb:10:in `index'
+Completed 200 OK in 77ms (Views: 39.6ms | ActiveRecord: 146.2ms | Allocations: 4878)
+
+
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:20:39 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:20:39 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (29.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 67ms (Views: 34.4ms | ActiveRecord: 29.1ms | Allocations: 1441)
+
+
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 11ms (ActiveRecord: 1.8ms | Allocations: 760)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:20:54 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:20:54 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 1.0ms | Allocations: 1543)
+
+
+  [1m[36mArtist Load (7.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 30ms (ActiveRecord: 7.4ms | Allocations: 2260)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:21:09 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:21:09 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (24.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 3.3ms | ActiveRecord: 24.9ms | Allocations: 1442)
+
+
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (8.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 11ms (ActiveRecord: 8.2ms | Allocations: 672)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/18" for ::1 at 2020-08-12 11:21:29 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.5ms | Allocations: 858)
+
+
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:23:02 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:23:02 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (18.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 4.6ms | ActiveRecord: 18.1ms | Allocations: 1440)
+
+
+  [1m[36mArtist Load (25.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 32ms (ActiveRecord: 25.6ms | Allocations: 2380)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/$/symptoms" for ::1 at 2020-08-12 11:25:50 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:25:50 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>"$"}
+  [1m[36mArtist Load (236.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 242ms (ActiveRecord: 236.2ms | Allocations: 671)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=$):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (94.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 98ms (Views: 3.2ms | ActiveRecord: 94.8ms | Allocations: 14535)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:26:05 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1614.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 1622ms (Views: 7.2ms | ActiveRecord: 1614.3ms | Allocations: 1445)
+
+
+Started GET "/artists//symptoms" for ::1 at 2020-08-12 11:26:21 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:26:21 -0400
+Processing by ArtistsController#index as HTML
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"symptoms"}
+  [1m[36mArtist Load (364.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 368ms (Views: 2.5ms | ActiveRecord: 364.5ms | Allocations: 1535)
+
+
+  [1m[36mArtist Load (398.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 400ms (ActiveRecord: 398.3ms | Allocations: 2258)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=symptoms):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:26:27 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:26:27 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (33.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 36ms (ActiveRecord: 33.0ms | Allocations: 1101)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (187.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 284ms (Views: 96.9ms | ActiveRecord: 187.1ms | Allocations: 84256)
+
+
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:27:22 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:27:22 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (424.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 428ms (ActiveRecord: 424.2ms | Allocations: 913)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (961.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 970ms (Views: 8.7ms | ActiveRecord: 961.4ms | Allocations: 54264)
+
+
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:27:39 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:27:39 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (2.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 7ms (ActiveRecord: 2.6ms | Allocations: 671)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1395.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 1399ms (Views: 3.3ms | ActiveRecord: 1395.4ms | Allocations: 69220)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 11:32:02 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:32:02 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:32:02 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (32.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mArtist Load (31.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 62ms (ActiveRecord: 31.7ms | Allocations: 1147)
+
+
+Completed 200 OK in 73ms (Views: 4.5ms | ActiveRecord: 32.9ms | Allocations: 1593)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (160.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 271ms (Views: 109.1ms | ActiveRecord: 160.9ms | Allocations: 27149)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:32:34 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:32:34 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:32:34 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (56.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mArtist Load (58.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 70ms (Views: 11.1ms | ActiveRecord: 58.7ms | Allocations: 2671)
+
+
+Completed 404 Not Found in 64ms (ActiveRecord: 56.5ms | Allocations: 1617)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (138.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 689ms (Views: 548.6ms | ActiveRecord: 138.2ms | Allocations: 22372)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:33:22 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:33:22 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:33:22 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (2.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  [1m[36mArtist Load (2.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (4.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 2.8ms | Allocations: 2009)
+
+
+Completed 200 OK in 8ms (Views: 3.3ms | ActiveRecord: 4.6ms | Allocations: 3299)
+
+
+Completed 404 Not Found in 10ms (ActiveRecord: 2.3ms | Allocations: 3519)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/20" for ::1 at 2020-08-12 11:33:26 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArtist Load (2.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 2.3ms | Allocations: 1427)
+
+
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:34:19 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:34:19 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (28.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 32ms (ActiveRecord: 28.4ms | Allocations: 1102)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (144.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 148ms (Views: 3.1ms | ActiveRecord: 144.1ms | Allocations: 31377)
+
+
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:35:27 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:35:27 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (10.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 13ms (ActiveRecord: 10.3ms | Allocations: 671)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (259.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 264ms (Views: 3.6ms | ActiveRecord: 259.7ms | Allocations: 84578)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:36:43 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:36:43 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (6.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mArtist Load (3.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 2.4ms | ActiveRecord: 6.9ms | Allocations: 2355)
+
+
+Completed 404 Not Found in 6ms (ActiveRecord: 3.2ms | Allocations: 2041)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/20" for ::1 at 2020-08-12 11:36:48 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArtist Load (11.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 17ms (Views: 0.8ms | ActiveRecord: 11.3ms | Allocations: 857)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:38:44 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:38:44 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:38:44 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 1.5ms | Allocations: 1441)
+
+
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (364.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 371ms (Views: 4.9ms | ActiveRecord: 364.1ms | Allocations: 1910)
+
+
+  [1m[36mArtist Load (5.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 344ms (ActiveRecord: 36.8ms | Allocations: 2305)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/new" for ::1 at 2020-08-12 11:38:48 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.9ms | Allocations: 664)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists" for ::1 at 2020-08-12 11:39:27 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:39:27 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:39:27 -0400
+Processing by SymptomsController#index as HTML
+Processing by ArtistsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (35.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 38ms (ActiveRecord: 35.9ms | Allocations: 790)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (37.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  [1m[36mArtist Load (302.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+Completed 200 OK in 305ms (Views: 268.0ms | ActiveRecord: 37.0ms | Allocations: 34919)
+
+
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 845ms (Views: 543.2ms | ActiveRecord: 302.0ms | Allocations: 96331)
+
+
+Started GET "/artists/new" for ::1 at 2020-08-12 11:39:30 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (38.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 40ms (ActiveRecord: 38.0ms | Allocations: 665)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists" for ::1 at 2020-08-12 11:40:26 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.9ms | Allocations: 1440)
+
+
+Started GET "/artists/new" for ::1 at 2020-08-12 11:40:28 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms | Allocations: 665)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists/new" for ::1 at 2020-08-12 11:40:43 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:40:43 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:40:43 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (6.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 3.8ms | ActiveRecord: 6.6ms | Allocations: 1440)
+
+
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Started GET "/artists" for ::1 at 2020-08-12 11:40:45 -0400
+  [1m[36mArtist Load (244.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 247ms (ActiveRecord: 244.6ms | Allocations: 3466)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (222.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 2154ms (ActiveRecord: 222.4ms | Allocations: 82805)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (128.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 944ms (Views: 814.9ms | ActiveRecord: 128.6ms | Allocations: 41588)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:41:00 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:41:00 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:41:00 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (2.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mArtist Load (5.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 7ms (ActiveRecord: 2.3ms | Allocations: 1757)
+
+
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 5.0ms | Allocations: 3050)
+
+
+  [1m[36mArtist Load (234.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 1807ms (Views: 1571.9ms | ActiveRecord: 234.9ms | Allocations: 114598)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:41:15 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:41:15 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:41:15 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (14.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mArtist Load (11.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 2.2ms | ActiveRecord: 11.1ms | Allocations: 1576)
+
+
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 21ms (ActiveRecord: 14.3ms | Allocations: 2919)
+
+
+  [1m[36mArtist Load (16.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 830ms (Views: 813.3ms | ActiveRecord: 16.4ms | Allocations: 4425)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists" for ::1 at 2020-08-12 11:41:40 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:41:40 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (30.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 33ms (ActiveRecord: 30.1ms | Allocations: 1101)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (158.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 163ms (Views: 4.1ms | ActiveRecord: 158.3ms | Allocations: 38885)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:41:50 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:41:50 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (797.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mArtist Load (800.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 200 OK in 809ms (Views: 8.4ms | ActiveRecord: 800.5ms | Allocations: 2328)
+
+
+Completed 404 Not Found in 808ms (ActiveRecord: 797.4ms | Allocations: 2198)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists" for ::1 at 2020-08-12 11:41:55 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.5ms | Allocations: 1440)
+
+
+Started GET "/artists/19" for ::1 at 2020-08-12 11:41:57 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mArtist Load (8.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 8.5ms | Allocations: 859)
+
+
+Started GET "/artists/19" for ::1 at 2020-08-12 11:42:02 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 859)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:42:03 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (3.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 3.2ms | Allocations: 1441)
+
+
+Started GET "/artists/new" for ::1 at 2020-08-12 11:42:04 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms | Allocations: 665)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists" for ::1 at 2020-08-12 11:42:45 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (2.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 2.7ms | Allocations: 1440)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 11:42:47 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (32.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 32.1ms | Allocations: 859)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 11:42:54 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:42:54 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:42:54 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.6ms | Allocations: 1441)
+
+
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (27.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 35ms (Views: 0.6ms | ActiveRecord: 27.6ms | Allocations: 3211)
+
+
+  [1m[36mArtist Load (41.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Started GET "/artists" for ::1 at 2020-08-12 11:42:56 -0400
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 1279ms (ActiveRecord: 41.0ms | Allocations: 2070)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (98.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 104ms (Views: 4.7ms | ActiveRecord: 98.7ms | Allocations: 22203)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:42:59 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:42:59 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:42:59 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 1.3ms | Allocations: 2082)
+
+
+  [1m[36mArtist Load (14.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 3.4ms | ActiveRecord: 14.7ms | Allocations: 1700)
+
+
+  [1m[36mArtist Load (17.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 57ms (ActiveRecord: 17.6ms | Allocations: 2600)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/new" for ::1 at 2020-08-12 11:43:01 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms | Allocations: 664)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists" for ::1 at 2020-08-12 11:43:26 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms | Allocations: 1440)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:43:29 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:43:29 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:43:29 -0400
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (65.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 74ms (Views: 6.6ms | ActiveRecord: 65.7ms | Allocations: 1675)
+
+
+  [1m[36mArtist Load (588.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 592ms (Views: 3.4ms | ActiveRecord: 588.3ms | Allocations: 3125)
+
+
+  [1m[36mArtist Load (623.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 1621ms (ActiveRecord: 623.0ms | Allocations: 3874)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/new" for ::1 at 2020-08-12 11:43:32 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms | Allocations: 773)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists/new" for ::1 at 2020-08-12 11:43:51 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:43:51 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:43:51 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (527.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 536ms (ActiveRecord: 527.4ms | Allocations: 898)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[36mArtist Load (675.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mArtist Load (674.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 1687ms (Views: 1012.4ms | ActiveRecord: 674.4ms | Allocations: 93539)
+
+
+Completed 404 Not Found in 1647ms (ActiveRecord: 675.0ms | Allocations: 75874)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists" for ::1 at 2020-08-12 11:44:09 -0400
+Started GET "/artists/new" for ::1 at 2020-08-12 11:44:09 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:44:09 -0400
+Processing by ArtistsController#index as HTML
+Processing by ArtistsController#show as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (7.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  [1m[36mArtist Load (5.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 23ms (ActiveRecord: 5.6ms | Allocations: 2094)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 11.9ms | ActiveRecord: 7.6ms | Allocations: 2109)
+
+
+  [1m[36mArtist Load (699.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Started GET "/artists" for ::1 at 2020-08-12 11:44:12 -0400
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 3143ms (ActiveRecord: 699.0ms | Allocations: 114173)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.8ms | Allocations: 1453)
+
+
+Started GET "/artists/new" for ::1 at 2020-08-12 11:44:15 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (7.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 106ms (ActiveRecord: 7.4ms | Allocations: 665)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists" for ::1 at 2020-08-12 11:44:19 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (21.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 7.8ms | ActiveRecord: 21.2ms | Allocations: 1440)
+
+
+Started GET "/artists/new" for ::1 at 2020-08-12 11:45:06 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (30.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 33ms (ActiveRecord: 30.5ms | Allocations: 665)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists/new" for ::1 at 2020-08-12 11:45:10 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:45:10 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:45:10 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (321.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mArtist Load (66.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mArtist Load (738.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 404 Not Found in 5261ms (ActiveRecord: 321.9ms | Allocations: 2993)
+
+
+Completed 200 OK in 4967ms (Views: 4899.9ms | ActiveRecord: 66.9ms | Allocations: 2869)
+
+
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 4974ms (ActiveRecord: 738.1ms | Allocations: 3501)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists" for ::1 at 2020-08-12 11:45:17 -0400
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (4660.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 4677ms (Views: 16.5ms | ActiveRecord: 4660.0ms | Allocations: 108738)
+
+
+Started GET "/artists" for ::1 at 2020-08-12 11:45:40 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:45:40 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:45:40 -0400
+Processing by SymptomsController#index as HTML
+Processing by ArtistsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (4.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 4.8ms | Allocations: 1957)
+
+
+  [1m[36mArtist Load (43.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 47ms (ActiveRecord: 43.3ms | Allocations: 2692)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (56.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 554ms (Views: 497.2ms | ActiveRecord: 56.3ms | Allocations: 29898)
+
+
+Started GET "/artists/new" for ::1 at 2020-08-12 11:45:46 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 664)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists/new" for ::1 at 2020-08-12 11:46:45 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:46:45 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:46:45 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (17.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 26ms (ActiveRecord: 17.6ms | Allocations: 1505)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (472.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mArtist Load (471.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 404 Not Found in 705ms (ActiveRecord: 472.0ms | Allocations: 84565)
+
+
+Completed 200 OK in 704ms (Views: 232.4ms | ActiveRecord: 471.3ms | Allocations: 85090)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists" for ::1 at 2020-08-12 11:47:57 -0400
+Started GET "/artists/new" for ::1 at 2020-08-12 11:47:57 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:47:57 -0400
+Processing by ArtistsController#index as HTML
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (5.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mArtist Load (4.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 5.7ms | Allocations: 2779)
+
+
+Completed 404 Not Found in 9ms (ActiveRecord: 4.4ms | Allocations: 2476)
+
+
+  [1m[36mArtist Load (4.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 292ms (ActiveRecord: 4.8ms | Allocations: 93720)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Started GET "/artists/new" for ::1 at 2020-08-12 11:50:10 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:50:10 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:50:10 -0400
+Processing by ArtistsController#show as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  Parameters: {"id"=>"new"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (11.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[36mArtist Load (18.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 21ms (ActiveRecord: 18.1ms | Allocations: 1807)
+
+
+Completed 404 Not Found in 19ms (ActiveRecord: 11.6ms | Allocations: 1165)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[36mArtist Load (120.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 1144ms (Views: 1023.8ms | ActiveRecord: 120.2ms | Allocations: 53708)
+
+
+Started GET "/artists/new" for ::1 at 2020-08-12 11:52:27 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:52:27 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:52:27 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+Processing by ArtistsController#index as HTML
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+  [1m[36mArtist Load (458.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 466ms (Views: 5.8ms | ActiveRecord: 458.7ms | Allocations: 1881)
+
+
+  [1m[36mArtist Load (392.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 407ms (ActiveRecord: 392.7ms | Allocations: 2260)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+  [1m[36mArtist Load (664.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 1134ms (ActiveRecord: 664.8ms | Allocations: 53543)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists/new" for ::1 at 2020-08-12 11:53:31 -0400
+Started GET "/artists" for ::1 at 2020-08-12 11:53:31 -0400
+Started GET "/artists/:artist_id/symptoms" for ::1 at 2020-08-12 11:53:31 -0400
+Processing by SymptomsController#index as HTML
+  Parameters: {"artist_id"=>":artist_id"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (15.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/symptoms_controller.rb:6:in `index'
+Completed 404 Not Found in 18ms (ActiveRecord: 15.9ms | Allocations: 959)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=:artist_id):
+  
+app/controllers/symptoms_controller.rb:6:in `index'
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (148.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 152ms (Views: 3.3ms | ActiveRecord: 148.2ms | Allocations: 33625)
+
+
+  [1m[36mArtist Load (107.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 511ms (ActiveRecord: 107.7ms | Allocations: 71731)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists" for ::1 at 2020-08-12 11:53:42 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 1.3ms | Allocations: 1440)
+
+
+Started GET "/artists/new" for ::1 at 2020-08-12 11:53:44 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mArtist Load (23.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 404 Not Found in 25ms (ActiveRecord: 23.7ms | Allocations: 665)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=new):
+  
+app/controllers/artists_controller.rb:45:in `set_artist'
+Started GET "/artists" for ::1 at 2020-08-12 11:53:47 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 1.4ms | Allocations: 1440)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 11:53:49 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (24.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 24.6ms | Allocations: 859)
+
+
+Started PUT "/artists/18" for ::1 at 2020-08-12 11:53:55 -0400
+Processing by ArtistsController#update as HTML
+  Parameters: {"artist"=>{"name"=>"Vincent Willem Van Gogh", "profile_img"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591057886/unnamed-1_toq7hp.jpg", "years"=>"1853-1890", "disorder"=>"Schizoaffective Disorder", "story"=>"Vincent Van Gogh had a long struggle with a long list of mental ailments. He took the pains of his tortured mind and portrayed such beautiful and dazzling colors in his work. With no doctor truly knowing what was his illness, Van Gogh went through a number of incarcerations and treatment that would leave him empty or lose his creative touch. As he famously said to his brother, ‘I have put my heart and soul into my work, and have lost my mind in the process.’ It wasn’t until long after his death, when a conference of art experts and psychologists diagnosed him with Schizoaffective Disorder, due to his symptoms of psychosis, mania, and depression.", "work_example"=>"Sunflowers (1888-1889)", "work_URL"=>"https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056847/unnamed_wms79t.jpg"}, "id"=>"18"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[36mArtist Exists? (6.4ms)[0m  [1m[34mSELECT 1 AS one FROM "artists" WHERE "artists"."name" = $1 AND "artists"."id" != $2 LIMIT $3[0m  [["name", "Vincent Willem Van Gogh"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:29:in `update'
+Completed 200 OK in 31ms (Views: 0.7ms | ActiveRecord: 8.0ms | Allocations: 3885)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 11:53:57 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (3.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 3.2ms | Allocations: 859)
+
+
+Started GET "/artists/18" for ::1 at 2020-08-12 11:54:01 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (2.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 2.3ms | Allocations: 859)
+
+

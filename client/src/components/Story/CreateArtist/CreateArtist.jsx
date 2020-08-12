@@ -1,58 +1,31 @@
-import React, { useState, useEffect } from 'react'
-import { updateArtist } from '../../../services/artists'
-import './EditArtist.css'
+import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
+import { postArtist } from '../../../services/artists'
 
-export default function EditArtist(props) {
+export default function CreateArtist(props) {
     const [formData, setFormData] = useState({
-       name: ""
+        name: ""
     })
 
-    useEffect(() => {
-        if (props.artist.length > 0) {
-            defaultFormData()
-        }
-    }, [props.artist])
-
-    const defaultFormData = () => {
-        console.log(props.artist)
-        const artist = props.artist.find((artist) => {
-            return artist.id === parseInt(props.match.params.id)
-        })
-        console.log(artist)
-        setFormData({
-            name: artist.name,
-            profile_img: artist.profile_img,
-            years: artist.years,
-            disorder: artist.disorder,
-            story: artist.story,
-            work_example: artist.work_example,
-            work_URL: artist.work_URL
-        })
-    }
-
     const handleChange = (e) => {
-        const {name, value} = e.target;
-        setFormData({
-            ...formData,
-            [name]: value})
+        const {value} = e.target
+        setFormData({name: value})
     }
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const {id} = props.match.params;
-        const changeArtist = await updateArtist(id, formData)
-        // props.setArtist(
-        //     props.artist.map((artist) => {
-        //         return artist.id === id;
-        //     })
-        // )
-        alert('Artist Story Updated!')
-        props.history.push(`/artists/${changeArtist.id}`)
+        const newArtist = await postArtist(formData)
+        props.setFoods({
+            ...props.artist,
+            newArtist
+        })
+        alert(`Artist Created!`)
+        props.history.push('/artists')
     }
 
     return(
         <>
-        <form className="edit-form" onSubmit={handleSubmit}>
+        <form className="create-form" onSubmit={handleSubmit}>
             <label>
                 Name:
             <input type="text" name="name" value={formData.name} onChange={handleChange}/>
@@ -81,7 +54,7 @@ export default function EditArtist(props) {
                 Image of Work:
             <input type="text" name="work_URL" value={formData.work_URL} onChange={handleChange}/>
             </label>
-            <button>Update Story</button>
+            <Link to={`/artists/:new_id/symptoms`}><button>Add Your Symptoms</button></Link>
         </form>
         </>
     )

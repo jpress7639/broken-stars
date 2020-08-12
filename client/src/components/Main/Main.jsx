@@ -26,6 +26,7 @@ export default function Main() {
                 </div>  
             ))}
         </div>
+        <Link to='/artists/new'><button>Create a New Story</button></Link>
         </div>
     )
 }

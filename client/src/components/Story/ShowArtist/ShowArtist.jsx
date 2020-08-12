@@ -24,9 +24,7 @@ export default function ShowArtist(props) {
     <img src={artist.work_URL}></img>
     <p>{artist.work_example}</p>
     <Link to={`/artists/${artist.id}/edit/`}><button>Update</button></Link>
-    <button>View Artist Symptoms</button>
-    
-    
+    <Link to={`/artists/${artist.id}/symptoms/`}><button>View Artist Symptoms</button></Link>
         </div>
     )
 }
