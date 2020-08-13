@@ -12,6 +12,7 @@ div.story-map {
 
 div.story-map img{
     height: 200px;
+    image-rendering: optimizeQuality;
     border-radius: 5px;
 }
 

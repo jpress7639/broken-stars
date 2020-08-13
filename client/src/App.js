@@ -9,6 +9,7 @@ import HandleSymptoms from './components/Story/CreateArtist/Handle/HandleSymptom
 import { readAllSymptoms } from './services/symptoms';
 import CreateArtist from './components/Story/CreateArtist/CreateArtist';
 import HandleResources from './components/Story/CreateArtist/Handle/HandleResources';
+import AddResource from './components/Story/CreateArtist/Handle/AddResource';
 
 function App() {
   const [artist, setStories] = useState([])
@@ -56,6 +57,12 @@ function App() {
       )}/>
       <Route exact path={`/artists/:id/resources`} render={(props) => (
         <HandleResources
+        {...props}
+        artist={artist}
+        />
+      )}/>
+      <Route exact path={`/artists/:id/resources/new`} render={(props) => (
+        <AddResource 
         {...props}
         artist={artist}
         />

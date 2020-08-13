@@ -38,17 +38,19 @@ export default function HandleSymptoms(props) {
         newSymptom({name: value})
     }
 
+
     const handleSubmit = async (e) => {
         e.preventDefault()
         const addSymptom = await createSymptom(symptom, artist.id);
         setSymptoms([...symptoms, addSymptom])
+
     }
 
     return(
         <div>
         <h3>{artist.name}'s Symptoms</h3>
         {symptoms && symptoms.map((symptom) => (
-            <p>{symptom.name}{symptom.id}<div className="modify"><button onClick={() => handleClick(symptom.id)}>Delete</button></div></p>
+            <p>{symptom.name}<div className="modify"><button onClick={() => handleClick(symptom.id)}>Delete</button></div></p>
         ))}
         <form>
             <label>

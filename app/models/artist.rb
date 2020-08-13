@@ -8,7 +8,7 @@ class Artist < ApplicationRecord
     validates :disorder, presence: true
     validates :work_example, presence: true
     validates :work_URL, presence: true
-    validates :story, presence: true, length: { minimum: 100 }
+    validates :story, presence: true
 
     # def name_validation
     #     errors.add(:name, :invalid_characters, not_allowed: "!@#%")

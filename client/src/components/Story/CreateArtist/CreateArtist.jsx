@@ -5,23 +5,28 @@ import './CreateArtist.css'
 
 export default function CreateArtist(props) {
     const [formData, setFormData] = useState({
-        name: ""
+        name: "", 
+        profile_img: "",
+        years: "",
+        disorder: "",
+        work_example: "",
+        work_URL: "",
+        story: ""
     })
 
     const handleChange = (e) => {
-        const {value} = e.target
-        setFormData({name: value})
+        const {name, value} = e.target;
+        setFormData({
+            ...formData,
+            [name]: value})
     }
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const newArtist = await postArtist(formData)
-        props.setFormData({
-            ...props.artist,
-            newArtist
-        })
+        const artistData = await postArtist(formData)
+        props.setArtist(artistData)
         alert(`Artist Created!`)
-        props.history.push(`/artists/${newArtist.id}/symptoms`)
+        props.history.push(`/`)
     }
 
     return(
@@ -44,10 +49,7 @@ export default function CreateArtist(props) {
             <input type="text" name="disorder" value={formData.disorder} onChange={handleChange}/>
             </label>
             <label>
-                Tell Us Your Story:
-            <input className="long" type="text" name="story" value={formData.story} onChange={handleChange}/>
-            </label>
-            <label>
+                
                 Feature Work (with Year of Creation):
             <input type="text" name="work_example" value={formData.work_example} onChange={handleChange}/>
             </label>
@@ -55,7 +57,11 @@ export default function CreateArtist(props) {
                 Image of Work:
             <input type="text" name="work_URL" value={formData.work_URL} onChange={handleChange}/>
             </label>
-           <button>Add Your Symptoms</button>
+            <label>
+            Tell Us Your Story:
+            <input className="long" type="text" name="story" value={formData.story} onChange={handleChange}/>
+            </label>
+           <button>Add Story</button>
         </form>
         </>
     )

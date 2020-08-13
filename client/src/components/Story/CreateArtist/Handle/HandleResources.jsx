@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { readAllSymptoms } from '../../../../services/symptoms'
+import {Link} from 'react-router-dom'
 import { useEffect } from 'react'
-import { getOneArtist } from '../../../../services/artists'
 import { readAllResources } from '../../../../services/resources'
 
 export default function HandleResources(props) {
@@ -24,6 +23,7 @@ export default function HandleResources(props) {
                 <a href={resource.link}><p>{resource.name}</p></a>
             </>
             ))}
+            <Link to={`/artists/${artist.id}/resources/new`}><button>Add New Resource</button></Link>
         </div>
     )
 }
