@@ -1,0 +1,21 @@
+a > p {
+    text-align: center;
+}
+
+form.new-resource{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+form.new-resource input{
+    margin: 20px;
+    width: 250px;
+}
+
+form.new-resource button{
+   width: 25%;
+   height: 20px;
+   margin: 20px auto;
+}

@@ -19,3 +19,8 @@ div.story-map img{
 div.story-links h4{
   text-align: center;
 }
+
+button.new-artist{
+    width: 100%;
+    font-size: 25px;
+}

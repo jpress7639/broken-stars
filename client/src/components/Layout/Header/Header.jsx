@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import './Header.css'
 
 class Header extends Component{
     constructor(){
@@ -9,7 +10,7 @@ class Header extends Component{
     render() {
         return(
             <div className="header">
-            <Link to='/'><h2>Broken Stars</h2></Link>
+           <h2><Link to='/' style={{ textDecoration: 'none', color: 'black' }}>Broken Stars</Link></h2>
             </div>
         )
     }

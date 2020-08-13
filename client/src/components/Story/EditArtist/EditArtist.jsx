@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { updateArtist, destroyArtist } from '../../../services/artists'
 import './EditArtist.css'
+import Layout from '../../Layout/Layout'
 
 export default function EditArtist(props) {
     const [formData, setFormData] = useState({
@@ -57,6 +58,7 @@ export default function EditArtist(props) {
 
     return(
         <>
+        <Layout>
         <form className="edit-form" onSubmit={handleSubmit}>
             <label>
                 Name:
@@ -89,6 +91,7 @@ export default function EditArtist(props) {
             <button>Update Story</button>
         </form>
         <button onClick={handleClick}>Delete Artist</button>
+        </Layout>
         </>
     )
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import { useEffect } from 'react'
 import { readAllResources } from '../../../../services/resources'
+import '../../../Layout/Footer/Footer.css'
 
 export default function HandleResources(props) {
     const [resources, setResources] = useState([])
@@ -17,13 +18,15 @@ export default function HandleResources(props) {
     }
 
     return(
-        <div>
+        <div className="resources">
             <h3>Resources for {artist.disorder}:</h3>
-            {resources.map((resource) => (<>
+            <div className="links">
+            {resources.map((resource) => (
+           
                 <a href={resource.link}><p>{resource.name}</p></a>
-            </>
             ))}
-            <Link to={`/artists/${artist.id}/resources/new`}><button>Add New Resource</button></Link>
+             </div>
+           <button><Link to={`/artists/${artist.id}/resources/new`} style={{ textDecoration: 'none', color: 'black'}}>Add New Resource</Link></button>
         </div>
     )
 }

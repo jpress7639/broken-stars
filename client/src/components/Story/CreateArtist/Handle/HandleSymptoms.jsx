@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from "react"
 import { readAllSymptoms, destroySymptom, createSymptom } from "../../../../services/symptoms"
 import { getOneArtist } from "../../../../services/artists"
+import Layout from "../../../Layout/Layout"
+import './HandleSymptoms.css'
+import HandleResources from "./HandleResources"
 
 
 export default function HandleSymptoms(props) {
@@ -48,10 +51,13 @@ export default function HandleSymptoms(props) {
 
     return(
         <div>
-        <h3>{artist.name}'s Symptoms</h3>
+            <Layout>
+        <h3>{artist.name}'s Main Symptoms</h3>
+        <div className="symptom-list">
         {symptoms && symptoms.map((symptom) => (
             <p>{symptom.name}<div className="modify"><button onClick={() => handleClick(symptom.id)}>Delete</button></div></p>
         ))}
+        </div>
         <form>
             <label>
                 New Symptom
@@ -59,6 +65,12 @@ export default function HandleSymptoms(props) {
             </label>
             <button onClick={handleSubmit}>Add Symptom</button>
         </form>
+        <footer>
+    <HandleResources 
+    {...props}
+    artist={artist}/>
+    </footer>
+        </Layout>
         </div>
     )
 }

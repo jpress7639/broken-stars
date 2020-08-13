@@ -28,7 +28,9 @@ export default function Main() {
                 </div>  
             ))}
         </div>
-        <Link to='/artists/new/create'><button>Create a New Story</button></Link>
+        <footer>
+        <button className="new-artist"><Link to='/artists/new/create' style={{textDecoration: 'none', color: 'black'}}>Create a New Story</Link></button>
+        </footer>
         </Layout>
         </div>
     )

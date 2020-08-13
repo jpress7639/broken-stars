@@ -1,6 +1,6 @@
 class Artist < ApplicationRecord
-    has_many :symptoms
-    has_many :resources
+    has_many :symptoms, dependent: :destroy
+    has_many :resources, dependent: :destroy
 
     validates :name, presence: true, uniqueness: true
     validates :profile_img, presence: true

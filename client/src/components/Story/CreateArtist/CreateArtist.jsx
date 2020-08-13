@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import { postArtist } from '../../../services/artists'
 import './CreateArtist.css'
+import Layout from '../../Layout/Layout'
 
 export default function CreateArtist(props) {
     const [formData, setFormData] = useState({
@@ -31,6 +32,7 @@ export default function CreateArtist(props) {
 
     return(
         <>
+        <Layout>
         <form className="create-form" onSubmit={handleSubmit}>
             <label>
                 Name:
@@ -63,6 +65,7 @@ export default function CreateArtist(props) {
             </label>
            <button>Add Story</button>
         </form>
+        </Layout>
         </>
     )
 }

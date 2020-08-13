@@ -1,12 +1,15 @@
 div.header {
-    height: 200px;
+    height: 100px;
     width: 100%;
-    border-bottom: 2px solid black;
-    box-shadow: 10px 10px 20px 5px black;
+    border-bottom: 1px solid black;
+    box-shadow: 10px 10px 20px 5px darkslategray;
+    margin-bottom: 20px;
 }
 
-div.header h2 {
+div.header h2{
+    font-size: 30px;
+    margin: 0 auto;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
