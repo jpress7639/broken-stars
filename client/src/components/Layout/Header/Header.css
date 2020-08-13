@@ -1,3 +1,12 @@
-h2 {
-    text-align: center;
+div.header {
+    height: 200px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    box-shadow: 10px 10px 20px 5px black;
 }
+
+div.header h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+

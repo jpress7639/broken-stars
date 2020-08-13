@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { updateArtist } from '../../../services/artists'
+import { updateArtist, destroyArtist } from '../../../services/artists'
 import './EditArtist.css'
 
 export default function EditArtist(props) {
@@ -50,6 +50,11 @@ export default function EditArtist(props) {
         props.history.push(`/artists/${changeArtist.id}`)
     }
 
+    const handleClick = async () => {
+        await destroyArtist(props.match.params.id)
+        props.history.push(`/`)
+    }
+
     return(
         <>
         <form className="edit-form" onSubmit={handleSubmit}>
@@ -83,6 +88,7 @@ export default function EditArtist(props) {
             </label>
             <button>Update Story</button>
         </form>
+        <button onClick={handleClick}>Delete Artist</button>
         </>
     )
 }

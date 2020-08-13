@@ -1,14 +1,18 @@
-import React from 'react'
-import { withRouter } from 'react-router-dom'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
-class Header {
+class Header extends Component{
+    constructor(){
+        super()
+    }
+
     render() {
         return(
-            <>
+            <div className="header">
             <Link to='/'><h2>Broken Stars</h2></Link>
-            </>
+            </div>
         )
     }
 }
 
-export default withRouter(Header)
+export default Header

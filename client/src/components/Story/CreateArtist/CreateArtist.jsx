@@ -24,7 +24,7 @@ export default function CreateArtist(props) {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const artistData = await postArtist(formData)
-        props.setArtist(artistData)
+        // props.setArtist(artistData)
         alert(`Artist Created!`)
         props.history.push(`/`)
     }

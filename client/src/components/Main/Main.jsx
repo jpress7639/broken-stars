@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import {Link} from "react-router-dom"
 import { getAllArtists } from "../../services/artists"
 import './Main.css'
+import Layout from "../Layout/Layout"
 
 export default function Main() {
     const [artists, setStories]  = useState([])
@@ -17,6 +18,7 @@ export default function Main() {
     
     return (
         <div>
+            <Layout>
             <h3>Stories</h3>
             <div className="story-map">
             {artists.map((artist) => (
@@ -27,6 +29,7 @@ export default function Main() {
             ))}
         </div>
         <Link to='/artists/new/create'><button>Create a New Story</button></Link>
+        </Layout>
         </div>
     )
 }
