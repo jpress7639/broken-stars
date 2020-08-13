@@ -1,9 +1,41 @@
 div.symptom-list{
     display: flex;
     justify-content: space-evenly;
+    color: rgb(239,239,217);
 }
 
-form{
-    margin: 50px auto;
+div.modify{
+    background-color: rgba(37, 37, 39, 0.5);
+    padding: 10px;
+    box-shadow: 10px 10px 15px 5px rgba(37, 37, 39, 0.5);
+    border-radius: 20px;
+}
+
+div.modify p {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 5px;
+}
+
+div.modify button{
+    margin: 0 10px 5px 10px;
+}
+
+form.add-symptom{
+    padding: 10px;
+    height: 30px;
+    margin: 50px 20%;
     text-align: center;
+    background-color: rgba(37, 37, 39, 0.5);
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px 5px rgba(37, 37, 39, 0.5);
+}
+
+form.add-symptom input {
+    margin: 0 10px;
+}
+
+form.add-symptom label{
+    color: rgb(239, 239, 217);
+    font-weight: bold;
 }

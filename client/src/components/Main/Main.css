@@ -5,9 +5,13 @@ div.story-map {
 }
 
  h3 {
+    background-color: rgba(33, 37, 37, 0.5);
+    box-shadow: 10px 10px 15px 5px rgba(33, 37, 37, 0.5);
+    border-radius: 20px;
     text-align: center;
     font-size: 30px;
-    margin: 50px 50px;
+    margin: 10% 35%;
+    color: rgb(239,239,218);
 }
 
 div.story-map img{
@@ -16,11 +20,28 @@ div.story-map img{
     border-radius: 5px;
 }
 
+div.story-links {
+    background-color: rgba(33, 37, 37, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 2s;
+}
+
+div.story-links:hover {
+    transform: scale(1.05);
+}
+
 div.story-links h4{
   text-align: center;
 }
 
 button.new-artist{
     width: 100%;
+    background-color: rgba(33, 37, 37, 0.5);
     font-size: 25px;
+    transition: all 2s;
+}
+
+button.new-artist:hover{
+    transform: scale(1.05)
 }

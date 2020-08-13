@@ -40,7 +40,7 @@ export default function AddResource(props) {
     return(
         <div>
             <Layout>
-            <h3>Add A New Resource for {artist.disorder}</h3>
+            <h3 className="instructions">Add A New Resource for {artist.disorder}</h3>
      {resources.map((resource) => (<>
                 <a href={resource.link}><p>{resource.name}</p></a>
             </>

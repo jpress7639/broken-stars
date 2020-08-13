@@ -23,13 +23,13 @@ export default function Main() {
             <div className="story-map">
             {artists.map((artist) => (
                  <div className="story-links">
-                 <Link to={`/artists/${artist.id}`}><img src={artist.profile_img} alt={artist.name}></img>
+                 <Link to={`/artists/${artist.id}`} style={{textDecoration: 'none', color: 'rgb(239,239,218)'}}><img src={artist.profile_img} alt={artist.name} ></img>
                 <h4>{artist.name}</h4></Link>
                 </div>  
             ))}
         </div>
         <footer>
-        <button className="new-artist"><Link to='/artists/new/create' style={{textDecoration: 'none', color: 'black'}}>Create a New Story</Link></button>
+        <button className="new-artist"><Link to='/artists/new/create' style={{textDecoration: 'none', color: 'rgb(239,239,218)'}}>Create a New Story</Link></button>
         </footer>
         </Layout>
         </div>

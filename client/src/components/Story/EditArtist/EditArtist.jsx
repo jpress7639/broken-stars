@@ -77,10 +77,6 @@ export default function EditArtist(props) {
             <input type="text" name="disorder" value={formData.disorder} onChange={handleChange}/>
             </label>
             <label>
-                Tell Us Your Story:
-            <input className="long" type="text" name="story" value={formData.story} onChange={handleChange}/>
-            </label>
-            <label>
                 Feature Work (with Year of Creation):
             <input type="text" name="work_example" value={formData.work_example} onChange={handleChange}/>
             </label>
@@ -88,9 +84,10 @@ export default function EditArtist(props) {
                 Image of Work:
             <input type="text" name="work_URL" value={formData.work_URL} onChange={handleChange}/>
             </label>
+            <textarea className="long" type="text" name="story" rows="8" cols="50" value={formData.story} onChange={handleChange}/>
             <button>Update Story</button>
         </form>
-        <button onClick={handleClick}>Delete Artist</button>
+        <button className="delete-button" onClick={handleClick}>Delete Artist</button>
         </Layout>
         </>
     )

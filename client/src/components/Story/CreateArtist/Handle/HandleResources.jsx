@@ -26,7 +26,7 @@ export default function HandleResources(props) {
                 <a href={resource.link}><p>{resource.name}</p></a>
             ))}
              </div>
-           <button><Link to={`/artists/${artist.id}/resources/new`} style={{ textDecoration: 'none', color: 'black'}}>Add New Resource</Link></button>
+           <button><Link to={`/artists/${artist.id}/resources/new`} style={{ textDecoration: 'none', color: 'rgb(239,239,218)' }}>Add New Resource</Link></button>
         </div>
     )
 }

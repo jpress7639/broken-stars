@@ -59,10 +59,7 @@ export default function CreateArtist(props) {
                 Image of Work:
             <input type="text" name="work_URL" value={formData.work_URL} onChange={handleChange}/>
             </label>
-            <label>
-            Tell Us Your Story:
-            <input className="long" type="text" name="story" value={formData.story} onChange={handleChange}/>
-            </label>
+            <textarea className="long" type="text" name="story" rows="8" cols="50" placeholder="Tell us your story..." value={formData.story} onChange={handleChange}/>
            <button>Add Story</button>
         </form>
         </Layout>

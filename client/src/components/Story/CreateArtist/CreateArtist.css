@@ -1,5 +1,32 @@
 form.create-form{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 25px 5px rgba(37,37,39,0.5);
+    background-color: rgba(37,37,39,0.5);
+    margin: 40px 20%;
+    transition: all 3s;
+}
+
+form.create-form:hover{
+    transform: scale(1.01);
+}
+
+form.create-form label{
+    color: rgb(239,239,218);
+    font-weight: bold;
+}
+
+form.create-form input {
+    margin: 15px;
+}
+
+form.create-form input:nth-of-type(3){
+    margin-left: -40px;
+}
+
+form.create-form button {
+    margin: 10px auto;
+    height: 50px;
+    width: 200px;
 }

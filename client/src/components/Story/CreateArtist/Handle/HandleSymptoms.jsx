@@ -55,10 +55,10 @@ export default function HandleSymptoms(props) {
         <h3>{artist.name}'s Main Symptoms</h3>
         <div className="symptom-list">
         {symptoms && symptoms.map((symptom) => (
-            <p>{symptom.name}<div className="modify"><button onClick={() => handleClick(symptom.id)}>Delete</button></div></p>
+            <div className="modify"><p>{symptom.name}<button onClick={() => handleClick(symptom.id)}>X</button></p></div>
         ))}
         </div>
-        <form>
+        <form className="add-symptom">
             <label>
                 New Symptom
                 <input type="text" name="name" onChange={handleChange}/>
