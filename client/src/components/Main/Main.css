@@ -45,3 +45,26 @@ button.new-artist{
 button.new-artist:hover{
     transform: scale(1.05)
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    h3{
+        font-size: 20px;
+    }
+
+    div.story-map img {
+        height: 100px;
+    }
+
+    button.new-artist {
+        font-size: 15px;
+    }
+
+    div.story-links h4{
+        font-size: 10px;
+    }
+
+}

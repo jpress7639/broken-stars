@@ -53,15 +53,15 @@ div.star2-animation{
 }
 
 div.star3-animation{
-    background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597414589/Screen_Shot_2020-08-14_at_10.14.12_AM_byygf5.png);
+    background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597426750/Screen_Shot_2020-08-14_at_1.37.52_PM_wpqrxu.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 175px;
-    width: 175px;
+    height: 120px;
+    width: 120px;
     position: fixed;
     z-index: -100;
     right: 35%;
-    top: 0;
+    top: 5%;
 
     -webkit-animation-name: spin 40s linear infinite;
     -moz-animation: spin 40s linear infinite;
@@ -198,3 +198,164 @@ div.star11-animation{
 }
 
 @keyframes spin { 100% {-webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@media (max-height: 425px) {
+    div.moon-animation {
+        display: none;
+    
+    
+    }
+    
+    div.star1-animation {
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597412930/Screen_Shot_2020-08-13_at_8.45.12_PM_suejpr.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 130px;
+        width: 130px;
+        position: fixed;
+        z-index: -100;
+        right: 25%;
+        top: 27.5%;
+        display: none;
+    
+    
+    }
+    
+    div.star2-animation{
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597413227/Screen_Shot_2020-08-13_at_8.46.23_PM_ot3c78.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 175px;
+        width: 175px;
+        position: fixed;
+        z-index: -100;
+        bottom: 0;
+        left: 27.5%;
+        display: none;
+    
+   
+    
+    }
+    
+    div.star3-animation{
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597426750/Screen_Shot_2020-08-14_at_1.37.52_PM_wpqrxu.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 120px;
+        width: 120px;
+        position: fixed;
+        z-index: -100;
+        right: 35%;
+        top: 5%;
+        display: none;
+    
+       
+    }
+    
+    div.star4-animation{
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597415227/Screen_Shot_2020-08-14_at_10.25.26_AM_iuhvjg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        z-index: -100;
+        bottom: 40%;
+        left: 29%;
+        display: none;
+    
+    }
+    
+    div.star5-animation{
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597412996/Screen_Shot_2020-08-13_at_8.45.20_PM_tqfeb2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        z-index: -100;
+        top: 20%;
+        left: 20%;
+        display: none;
+    
+ 
+    
+    }
+    
+    div.star6-animation{
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597413218/Screen_Shot_2020-08-13_at_8.45.49_PM_aijhuz.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 110px;
+        width: 110px;
+        position: fixed;
+        z-index: -100;
+        left: 6%;
+        top: 0;
+        display: none;
+    
+    }
+    
+    div.star7-animation{
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597418379/Screen_Shot_2020-08-14_at_10.40.41_AM_r9gnw3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 90px;
+        width: 90px;
+        position: fixed;
+        z-index: -100;
+        left: 20%;
+        top: -2%;
+        display: none;
+    
+    }
+    
+    div.star8-animation{
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597419221/Screen_Shot_2020-08-14_at_10.40.37_AM_h1cuyy.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 110px;
+        width: 110px;
+        position: fixed;
+        z-index: -100;
+        left: 30%;
+        top: -0.5%;
+        display: none;
+    
+
+    }
+    
+    div.star9-animation{
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597418299/Screen_Shot_2020-08-14_at_10.40.32_AM_ihmnpv.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 90px;
+        width: 90px;
+        position: fixed;
+        z-index: -100;
+        left: 37.5%;
+        top: 4%;
+        display: none;
+    
+   
+    }
+    
+    div.star10-animation{
+        background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597419912/Screen_Shot_2020-08-14_at_10.41.05_AM_za6tve.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 90px;
+        width: 90px;
+        position: fixed;
+        z-index: -100;
+        left: 10%;
+        bottom: 15%;
+        display: none;
+    
+    }
+    
+    div.star11-animation{
+        display: none;
+    }
+
+}

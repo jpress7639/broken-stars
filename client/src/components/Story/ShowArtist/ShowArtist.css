@@ -90,5 +90,56 @@ div.artist-profile div.button-divs button:hover{
     transform: scale(1.1);
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    h3.artist-title{
+        font-size: 15px;
+        margin: 40px auto;
+        width: 50%;
+    }
+
+    div.artist-profile{
+        grid-template-rows: 150px 200px;
+    }
+
+    div.artist-profile p{
+        font-size: 10px;
+        margin-bottom: -100px;
+    }
+
+    div.artist-profile img{
+        height: 200px;
+    }
+
+    div.artist-profile div.button-divs{
+        margin-top: 210px;
+        display: flex;
+    }
+
+    div.artist-profile div.button-divs button{
+        font-size: 10px;
+    }
+
+    div.artist-profile div.recos{
+        margin-top: 30px;
+        grid-column: 1 / 3;
+        flex-direction: row;
+    }
+
+    div.artist-profile div.recos img{
+        margin-top: 100px;
+        height: 150px;
+    }
+
+    div.artist-profile div.recos p{
+        font-size: 15px;
+        margin-top: 125px;
+        margin-bottom: -15px;
+    }
+
+  }
 
 

@@ -20,7 +20,7 @@ export default function ShowArtist(props) {
     return(
         <Layout>
             <div className="show-artist">
-             <h3>{artist.name} and {artist.disorder}</h3>
+             <h3 className="artist-title">{artist.name} and {artist.disorder}</h3>
         <div className="artist-profile">
     <img src={artist.profile_img}></img>
     <h4>{artist.years}</h4>
