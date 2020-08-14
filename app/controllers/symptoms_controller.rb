@@ -1,9 +1,12 @@
 class SymptomsController < ApplicationController
-  before_action :set_symptom, only: [:show, :update, :destroy]
+  before_action :set_symptom, only: [:show, :destroy]
+  before_action  only: [:create, :destroy]
 
   # GET /symptoms
   def index
-    @symptoms = Symptom.all
+    @artist = Artist.find(params[:artist_id])
+
+    @symptoms = Symptom.where(artist_id: @artist.id).all
 
     render json: @symptoms
   end
@@ -13,33 +16,27 @@ class SymptomsController < ApplicationController
     render json: @symptom
   end
 
-  # POST /symptoms
-  def create
-    @symptom = Symptom.new(symptom_params)
+  # Adding Symptoms 
+def create
+  @symptom = Symptom.new(symptom_params)
+  @artist = Artist.find(params[:artist_id])
 
-    if @symptom.save
-      render json: @symptom, status: :created, location: @symptom
-    else
-      render json: @symptom.errors, status: :unprocessable_entity
-    end
-  end
+  @artist.symptoms << @symptom
 
-  # PATCH/PUT /symptoms/1
-  def update
-    if @symptom.update(symptom_params)
-      render json: @symptom
-    else
-      render json: @symptom.errors, status: :unprocessable_entity
-    end
+  if @symptom.save
+    render json: @symptom, status: :created
+  else
+    render json: @symptom.errors, status: :unprocessable_entity
   end
+end
 
-  # DELETE /symptoms/1
-  def destroy
-    @symptom.destroy
-  end
+# DELETE /symptoms/1
+def destroy 
+  @symptom.destroy
+end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+#     # Use callbacks to share common setup or constraints between actions.
     def set_symptom
       @symptom = Symptom.find(params[:id])
     end

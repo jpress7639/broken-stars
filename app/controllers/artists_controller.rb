@@ -5,12 +5,12 @@ class ArtistsController < ApplicationController
   def index
     @artists = Artist.all
 
-    render json: @artists include: symptoms
+    render json: @artists 
   end
 
   # GET /artists/1
   def show
-    render json: @artist include: symptoms
+    render json: @artist 
   end
 
   # POST /artists
@@ -37,6 +37,7 @@ class ArtistsController < ApplicationController
   def destroy
     @artist.destroy
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

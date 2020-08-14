@@ -1,0 +1,41 @@
+form.edit-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(37,37,39,0.5);
+    margin: 10px 25%;
+    padding: 20px;
+    transition: all 3s;
+}
+
+form.edit-form:hover{
+    transform: scale(1.02)
+}
+
+form.edit-form input{
+    margin: 10px;
+}
+
+form.edit-form label{
+    color: rgb(239,239,217);
+}
+
+form.edit-form textarea{
+    margin: 10px 10%;
+}
+
+form.edit-form button{
+    height: 50px;
+}
+
+button.delete-button{
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    height: 50px;
+    transition: all 3s;
+}
+
+button.delete-button:hover{
+    transform: scale(1.02)
+}
