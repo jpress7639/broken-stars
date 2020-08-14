@@ -26,8 +26,8 @@ export default function ShowArtist(props) {
     <h4>{artist.years}</h4>
     <p>{artist.story}</p>
     <div className="button-divs">
-    <button><Link to={`/artists/${artist.id}/edit/`} style={{textDecoration: 'none', color: 'black'}}>Update</Link></button>
-    <button><Link to={`/artists/${artist.id}/symptoms/`} style={{textDecoration: 'none', color: 'black'}}>View Artist Symptoms</Link></button>
+    <button><Link to={`/artists/${artist.id}/edit/`} style={{textDecoration: 'none', color: 'rgb(239, 239, 218'}}>Update</Link></button>
+    <button><Link to={`/artists/${artist.id}/symptoms/`} style={{textDecoration: 'none', color: 'rgb(239, 239, 218)'}}>View Artist Symptoms</Link></button>
     </div>
     <div className="recos">
     <img src={artist.work_URL}></img>

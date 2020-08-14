@@ -23,7 +23,7 @@ export default function HandleResources(props) {
             <div className="links">
             {resources.map((resource) => (
            
-                <a href={resource.link}><p>{resource.name}</p></a>
+                <a className="footer-links" href={resource.link}><p>{resource.name}</p></a>
             ))}
              </div>
            <button><Link to={`/artists/${artist.id}/resources/new`} style={{ textDecoration: 'none', color: 'rgb(239,239,218)' }}>Add New Resource</Link></button>

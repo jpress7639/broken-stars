@@ -42,7 +42,7 @@ export default function AddResource(props) {
             <Layout>
             <h3 className="instructions">Add A New Resource for {artist.disorder}</h3>
      {resources.map((resource) => (<>
-                <a href={resource.link}><p>{resource.name}</p></a>
+                <a className="resource-list" href={resource.link}><p>{resource.name}</p></a>
             </>
             ))}
             <form className="new-resource">

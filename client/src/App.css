@@ -1,9 +1,10 @@
 body {
+  background-attachment: fixed;
   background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1591056848/starry_night_full_kmalxg.jpg);
   background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -18,4 +19,4 @@ body {
   to {
     transform: rotate(360deg);
   }
-}
+} */

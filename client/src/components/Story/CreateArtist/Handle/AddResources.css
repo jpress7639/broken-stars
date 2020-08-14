@@ -2,7 +2,7 @@ h3.instructions {
     margin: 30px 30%;
 }
 
-a > p {
+a.resource-list > p {
     text-align: center;
     color: rgb(239, 239, 217);
     font-weight: bolder;
@@ -15,7 +15,7 @@ a > p {
     transition: all 2s;
 }
 
-a > p:hover{
+a.resource-list > p:hover{
     transform: scale(1.02);
     background-color: rgba(37, 37, 39, 0.8);
 }
