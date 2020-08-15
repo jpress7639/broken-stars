@@ -56,11 +56,11 @@ div.star3-animation{
     background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597426750/Screen_Shot_2020-08-14_at_1.37.52_PM_wpqrxu.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 120px;
-    width: 120px;
+    height: 170px;
+    width: 170px;
     position: fixed;
     z-index: -100;
-    right: 35%;
+    right: 33%;
     top: 5%;
 
     -webkit-animation-name: spin 40s linear infinite;

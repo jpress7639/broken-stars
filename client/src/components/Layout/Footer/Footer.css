@@ -67,14 +67,19 @@ button.new-artist{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    footer{
-        height: 100px;
-        margin-top: 110px;
+    footer.create{
+        height: 70px;
+        margin-top: 90px;
     }
 
     button.new-artist{
         height: 80px;
-        margin-top: -10px;
+        margin-top: 0px;
+    }
+
+    footer.resources{
+        margin-top: 80px;
+        padding: 0;
     }
 
     div.resources{
@@ -90,6 +95,7 @@ button.new-artist{
 
     div.resources div.links a.footer-links p{
         font-size: 15px;
+        margin: 0;
     }
 
     div.resources button{

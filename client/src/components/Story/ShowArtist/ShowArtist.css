@@ -101,21 +101,29 @@ div.artist-profile div.button-divs button:hover{
         width: 50%;
     }
 
+    div.artist-profile > h4 {
+        font-size: 15px;
+    }
+
     div.artist-profile{
         grid-template-rows: 150px 200px;
     }
 
     div.artist-profile p{
-        font-size: 10px;
-        margin-bottom: -100px;
+        font-size: 7.5px;
+        line-height: 12px;
+        margin-bottom: -110px;
     }
 
     div.artist-profile img{
         height: 200px;
+        padding-bottom: 55px;
+        background-color: rgba(33, 37, 37, 0.5);
     }
 
     div.artist-profile div.button-divs{
-        margin-top: 210px;
+        grid-row: 2 / 3;
+        margin-top: 65px;
         display: flex;
     }
 
@@ -132,10 +140,12 @@ div.artist-profile div.button-divs button:hover{
     div.artist-profile div.recos img{
         margin-top: 100px;
         height: 150px;
+        padding: 0;
     }
 
     div.artist-profile div.recos p{
         font-size: 15px;
+        line-height: 20px;
         margin-top: 125px;
         margin-bottom: -15px;
     }

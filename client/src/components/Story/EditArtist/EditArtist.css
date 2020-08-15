@@ -26,6 +26,9 @@ form.edit-form textarea{
 
 form.edit-form button{
     height: 50px;
+    background-color: transparent;
+    color: rgb(239,239,217);
+    border: 1px solid rgb(239,239,217);
 }
 
 button.delete-button{
@@ -34,8 +37,23 @@ button.delete-button{
     width: 50%;
     height: 50px;
     transition: all 3s;
+    color: rgb(239,239,217);
+    border: 1px solid rgb(239,239,217);
+    background-color: rgba(37,37,39,0.5);
 }
 
 button.delete-button:hover{
     transform: scale(1.02)
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    form.edit-form{
+        width: 80%;
+        margin: auto;
+    }
+
+  }

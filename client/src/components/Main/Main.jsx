@@ -28,7 +28,7 @@ export default function Main() {
                 </div>  
             ))}
         </div>
-        <footer>
+        <footer className="create">
         <button className="new-artist"><Link to='/artists/new/create' style={{textDecoration: 'none', color: 'rgb(239,239,218)'}}>Create a New Story</Link></button>
         </footer>
         </Layout>

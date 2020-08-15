@@ -19,11 +19,14 @@ div.modify p {
 
 div.modify button{
     margin: 0 10px 5px 10px;
+    background-color: transparent;
+    color: rgb(239, 239, 217);
+    border: 1px solid rgb(239, 239, 217);
 }
 
 form.add-symptom{
     padding: 10px;
-    height: 30px;
+    height: 100px;
     margin: 50px 20%;
     text-align: center;
     background-color: rgba(37, 37, 39, 0.5);
@@ -32,10 +35,44 @@ form.add-symptom{
 }
 
 form.add-symptom input {
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 form.add-symptom label{
     color: rgb(239, 239, 217);
     font-weight: bold;
+    margin-bottom: 10px;
 }
+
+form.add-symptom button{
+    height: 40px;
+    margin: 5px;
+    background-color: transparent;
+    color: rgb(239, 239, 217);
+    border: 1px solid rgb(239, 239, 217);
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    h3.symptom-header{
+        font-size: 15px;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    div.modify{
+        padding: 0;
+    }
+
+    div.modify p{
+        font-size: 15px;
+    }
+
+    div.modify button{
+        font-size: 5px;
+    }
+
+  }

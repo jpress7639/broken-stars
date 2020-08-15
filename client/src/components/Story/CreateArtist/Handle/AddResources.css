@@ -54,6 +54,33 @@ form.new-resource input{
 
 form.new-resource button{
    width: 25%;
-   height: 20px;
+   height: 40px;
    margin: 20px auto;
+   background-color: transparent;
+   color: rgb(239, 239, 217);
+   border: 1px solid rgb(239, 239, 217);
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    h3.instructions {
+        font-size: 15px;
+        width: 50%;
+        margin: auto;
+    }
+
+    a.resource-list > p{
+        font-size: 15px;
+    }
+
+    form.new-resource{
+        width: 75%;
+    }
+
+    form.new-resource button{
+        width: 50%;
+    }
+  }

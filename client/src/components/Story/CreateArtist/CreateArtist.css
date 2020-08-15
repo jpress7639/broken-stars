@@ -41,3 +41,26 @@ form.create-form button:hover{
     background-color: rgba(37,37,39,0.8);
     transform: scale(1.02);
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    form.create-form{
+        width: 85%;
+        margin: 40px auto;
+        padding: 5px;
+    }
+
+    form.crete form label{
+        font-size: 10px;
+    }
+
+    form.create-form button{
+        font-size: 10px;
+        height: 30px;
+        width: 100px;
+    }
+
+  }

@@ -35,7 +35,7 @@ export default function ShowArtist(props) {
     </div>
    
     </div>
-    <footer>
+    <footer className="resources">
     <HandleResources 
     {...props}
     artist={artist}/>

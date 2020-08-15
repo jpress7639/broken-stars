@@ -52,7 +52,7 @@ export default function HandleSymptoms(props) {
     return(
         <div>
             <Layout>
-        <h3>{artist.name}'s Main Symptoms</h3>
+        <h3 className="symptom-header">{artist.name}'s Main Symptoms</h3>
         <div className="symptom-list">
         {symptoms && symptoms.map((symptom) => (
             <div className="modify"><p>{symptom.name}<button onClick={() => handleClick(symptom.id)}>X</button></p></div>
