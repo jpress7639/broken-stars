@@ -16,6 +16,7 @@ div.resources{
 }
 
 div.resources h3 {
+    font-family: satisfy;
     margin: 0;
 }
 
@@ -58,6 +59,7 @@ div.resources button:hover{
 }
 
 button.new-artist{
+    font-family: dancing script;
     border: none;
     height: 100px;
 }

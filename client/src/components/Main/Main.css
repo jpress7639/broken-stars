@@ -10,6 +10,7 @@ div.story-map {
     border-radius: 20px;
     text-align: center;
     font-size: 30px;
+    font-family: dancing script;
     margin: 10% 35%;
     color: rgb(239,239,218);
 }
@@ -33,6 +34,7 @@ div.story-links:hover {
 
 div.story-links h4{
   text-align: center;
+  font-family: julius sans one;
 }
 
 button.new-artist{
