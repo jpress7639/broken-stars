@@ -7,12 +7,12 @@ div.moon-animation {
     background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597411744/Screen_Shot_2020-08-13_at_8.45.00_PM_wtswh3.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 350px;
-    width: 350px;
+    height: 360px;
+    width: 360px;
     position: fixed;
     z-index: -100;
     right: -5%;
-    top: 3%;
+    top: 2%;
 
     -webkit-animation-name: spin 40s linear infinite;
     -moz-animation: spin 40s linear infinite;
@@ -57,16 +57,16 @@ div.star3-animation{
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 100%;
-    height: 170px;
-    width: 170px;
+    height: 130px;
+    width: 200px;
     position: fixed;
     z-index: -100;
-    right: 33%;
-    top: 5%;
+    right: 31%;
+    top: 4%;
 
     -webkit-animation-name: spin 40s linear infinite;
     -moz-animation: spin 40s linear infinite;
-    /* animation: spin 40s linear infinite; */
+    animation: spin 40s linear infinite;
 }
 
 div.star4-animation{
@@ -106,11 +106,11 @@ div.star6-animation{
     background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597413218/Screen_Shot_2020-08-13_at_8.45.49_PM_aijhuz.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 110px;
-    width: 110px;
+    height: 120px;
+    width: 130px;
     position: fixed;
     z-index: -100;
-    left: 6%;
+    left: 5%;
     top: 0;
 
     -webkit-animation-name: spin 40s linear infinite;
@@ -122,11 +122,11 @@ div.star7-animation{
     background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597418379/Screen_Shot_2020-08-14_at_10.40.41_AM_r9gnw3.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 100px;
     position: fixed;
     z-index: -100;
-    left: 20%;
+    left: 19%;
     top: -2%;
 
     -webkit-animation-name: spin 40s linear infinite;
@@ -138,8 +138,8 @@ div.star8-animation{
     background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597419221/Screen_Shot_2020-08-14_at_10.40.37_AM_h1cuyy.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 110px;
-    width: 110px;
+    height: 100px;
+    width: 130px;
     position: fixed;
     z-index: -100;
     left: 30%;
@@ -205,8 +205,165 @@ div.star11-animation{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    div.moon-animation, div.star1-animation, div.star2-animation, div.star3-animation, div.star4-animation, div.star5-animation, div.star6-animation, div.star7-animation, div.star8-animation, div.star9-animation, div.star10-animation, div.star11-animation {
+    div.moon-animation, div.star1-animation {
         display: none
     }
 
+    div.star2-animation{
+        height: 100px;
+        width: 100px;
+        bottom: 38%;
+        left: 45%;
+    }
+
+    div.star3-animation{
+        height: 80px;
+        width: 120px;
+        right: -40px;
+        top: 10px;
+    }
+
+    div.star4-animation{
+        height: 60px;
+        width: 60px;
+        top: 27.5%;
+        left: 45%;
+    }
+
+    div.star5-animation{
+        height: 60px;
+        width: 60px;
+        left: 30%;
+        top: 12%;
+    }
+
+    div.star6-animation{
+        height: 60px;
+        width: 70px;
+        left: 9%;
+        top: -1%;
+    }
+
+    div.star7-animation{
+        height: 50px;
+        width: 60px;
+        left: 30%;
+        top: -2%;
+    }
+
+    div.star8-animation{
+        height: 50px;
+        width: 70px;
+        left: 47.5%;
+    }
+
+    div.star9-animation{
+        width: 50px;
+        height: 40px;
+        left: 60%;
+        top: 20px;
+    }
+
+    div.star10-animation{
+        width: 50px;
+        height: 50px;
+        bottom: 47.5%;
+        left: 15%;
+    }
+
+    div.star11-animation{
+        width: 40px;
+        height: 40px;
+        bottom: 51%;
+        left: 2%;
+    } 
   }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    div.moon-animation{
+        height: 180px;
+        width: 180px;
+        right: -10px;
+    }
+    
+    div.star1-animation{
+        height: 80px;
+        width: 80px;
+        right: 24%;
+        top: 20%;
+    }
+
+    div.star2-animation{
+        height: 110px;
+        width: 110px;
+        bottom: 30%;
+        left: 27.5%;
+    }
+
+    div.star3-animation{
+        height: 80px;
+        width: 120px;
+        right: 31%;
+        top: 10px;
+    }
+
+    div.star4-animation{
+        height: 60px;
+        width: 60px;
+        top: 32%;
+        left: 28%;
+    }
+
+    div.star5-animation{
+        height: 60px;
+        width: 60px;
+        left: 20%;
+        top: 14%;
+    }
+
+    div.star6-animation{
+        height: 70px;
+        width: 80px;
+        left: 5%;
+        top: -1%;
+    }
+
+    div.star7-animation{
+        height: 40px;
+        width: 50px;
+        left: 20%;
+        top: 0%;
+    }
+
+    div.star8-animation{
+        height: 50px;
+        width: 70px;
+        left: 30%;
+    }
+
+    div.star9-animation{
+        width: 50px;
+        height: 40px;
+        left: 37.5%;
+        top: 20px;
+    }
+
+    div.star10-animation{
+        width: 50px;
+        height: 50px;
+        bottom: 41%;
+        left: 10%;
+    }
+
+    div.star11-animation{
+        width: 40px;
+        height: 40px;
+        bottom: 45%;
+        left: 2%;
+    } 
+}

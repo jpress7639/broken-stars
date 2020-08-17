@@ -10,7 +10,7 @@ body {
   and (-webkit-min-device-pixel-ratio: 2) {
 
     body{
-      background-image: url(https://media.giphy.com/media/TF5O9coaPtg64NulVu/giphy.gif);
+      /* background-image: url(https://media.giphy.com/media/TF5O9coaPtg64NulVu/giphy.gif); */
       background-size: cover;
     }
 
