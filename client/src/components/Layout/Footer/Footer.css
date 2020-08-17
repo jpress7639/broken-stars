@@ -41,6 +41,7 @@ div.resources div.links a.footer-links p{
     color: rgb(239, 239, 218);
     font-size: 20px;
     font-weight: bold;
+    font-family: lato;
 }
 
 div.resources button{
@@ -51,6 +52,7 @@ div.resources button{
     margin: auto;
     margin-bottom: 30px;
     transition: all 3s;
+    font-family: lato;
 }
 
 div.resources button:hover{

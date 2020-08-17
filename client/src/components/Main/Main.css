@@ -11,7 +11,22 @@ div.story-map {
     text-align: center;
     font-size: 30px;
     font-family: dancing script;
-    margin: 10% 35%;
+    margin: 8% 35%;
+    color: rgb(239,239,218);
+}
+
+input.search {
+    display: block;
+    margin: 10% auto;
+    padding: 10px;
+    background-color: rgba(33, 37, 37, 0.5);
+    color: rgb(239,239,218);
+    border: 2px solid rgb(239,239,218);
+    font-family: lato;
+    box-shadow: 10px 10px 15px 5px rgba(33, 37, 37, 0.5);
+}
+
+::placeholder{
     color: rgb(239,239,218);
 }
 

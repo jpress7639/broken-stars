@@ -27,7 +27,7 @@ div.star1-animation {
     width: 130px;
     position: fixed;
     z-index: -100;
-    right: 25%;
+    right: 24%;
     top: 27.5%;
 
     -webkit-animation-name: spin 40s linear infinite;
@@ -39,12 +39,12 @@ div.star2-animation{
     background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597413227/Screen_Shot_2020-08-13_at_8.46.23_PM_ot3c78.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 175px;
-    width: 175px;
+    height: 170px;
+    width: 170px;
     position: fixed;
     z-index: -100;
     bottom: 0;
-    left: 27.5%;
+    left: 28.5%;
 
     -webkit-animation-name: spin 40s linear infinite;
     -moz-animation: spin 40s linear infinite;
@@ -106,12 +106,12 @@ div.star6-animation{
     background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597413218/Screen_Shot_2020-08-13_at_8.45.49_PM_aijhuz.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 120px;
-    width: 130px;
+    height: 110px;
+    width: 120px;
     position: fixed;
     z-index: -100;
-    left: 5%;
-    top: 0;
+    left: 6%;
+    top: -1%;
 
     -webkit-animation-name: spin 40s linear infinite;
     -moz-animation: spin 40s linear infinite;
@@ -138,8 +138,8 @@ div.star8-animation{
     background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597419221/Screen_Shot_2020-08-14_at_10.40.37_AM_h1cuyy.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 130px;
+    height: 90px;
+    width: 120px;
     position: fixed;
     z-index: -100;
     left: 30%;
@@ -154,12 +154,12 @@ div.star9-animation{
     background-image: url(https://res.cloudinary.com/dkhiieq9p/image/upload/v1597418299/Screen_Shot_2020-08-14_at_10.40.32_AM_ihmnpv.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
+    height: 75px;
+    width: 85px;
     position: fixed;
     z-index: -100;
-    left: 37.5%;
-    top: 4%;
+    left: 38%;
+    top: 5%;
 
     -webkit-animation-name: spin 40s linear infinite;
     -moz-animation: spin 40s linear infinite;

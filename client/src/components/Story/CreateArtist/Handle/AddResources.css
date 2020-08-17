@@ -7,6 +7,7 @@ a.resource-list > p {
     color: rgb(239, 239, 217);
     font-weight: bolder;
     font-size: 25px;
+    font-family: lato;
     box-shadow: 10px 10px 25px 5px rgba(37, 37, 39, 0.5);
     width: 30%;
     margin: 30px auto;
@@ -27,6 +28,7 @@ a {
 form.new-resource{
     display: flex;
     flex-direction: column;
+    font-family: lato;
     text-align: center;
     width: 40%;
     margin: 20px auto;
@@ -92,6 +94,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     a.resource-list > p{
         font-size: 20px;
+        font-family: lato;
     }
 
     form.new-resource{

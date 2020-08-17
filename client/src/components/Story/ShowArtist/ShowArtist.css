@@ -4,6 +4,7 @@ div.artist-profile > h4 {
     text-align: center;
     margin-top: -130px;
     margin-bottom: 50px;
+    font-family: libre caslon display;
 }
 
 div.artist-profile{
@@ -46,6 +47,7 @@ div.artist-profile div.recos p{
     text-align: center;
     font-size: 20px;
     margin: 10px;
+    font-family: lato;
 }
 
 div.artist-profile p{
@@ -58,6 +60,7 @@ div.artist-profile p{
     padding: 10px;
     transition: all 3s;
     margin-bottom: 10px;
+    font-family: lato;
 }
 
 div.artist-profile p:hover {
@@ -80,6 +83,7 @@ div.artist-profile div.button-divs button{
     background-color: transparent;
     border: 1px solid rgb(239, 239, 218);
     font-size: 15px;
+    font-family: lato;
     height: 40px;
     margin: -5px 20px;
     transition: all 3s;
@@ -175,13 +179,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
     
     div.artist-profile p{
-        font-size: 15px;
+        font-size: 13px;
         margin-bottom: -45px;
     }
 
     div.artist-profile div.button-divs{
         grid-row: 2 / 3;
-        margin-top: 5px;
+        margin-top: 0;
     }
 
     div.artist-profile div.recos{
