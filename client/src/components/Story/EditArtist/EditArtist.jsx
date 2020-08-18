@@ -15,11 +15,10 @@ export default function EditArtist(props) {
     }, [props.artist])
 
     const defaultFormData = () => {
-        console.log(props.artist)
         const artist = props.artist.find((artist) => {
             return artist.id === parseInt(props.match.params.id)
         })
-        console.log(artist)
+        if (artist) {
         setFormData({
             name: artist.name,
             profile_img: artist.profile_img,
@@ -29,6 +28,7 @@ export default function EditArtist(props) {
             work_example: artist.work_example,
             work_URL: artist.work_URL
         })
+    }
     }
 
     const handleChange = (e) => {

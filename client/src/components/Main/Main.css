@@ -23,11 +23,16 @@ input.search {
     color: rgb(239,239,218);
     border: 2px solid rgb(239,239,218);
     font-family: lato;
+    font-size: 20px;
     box-shadow: 10px 10px 15px 5px rgba(33, 37, 37, 0.5);
+    width: 250px;
+    height: 50px;
 }
 
 ::placeholder{
     color: rgb(239,239,218);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 div.story-map img{
@@ -91,6 +96,9 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1) {
 
+    div.story-map{
+        flex-wrap: wrap;
+    }
 
     div.story-map img {
         height: 150px;

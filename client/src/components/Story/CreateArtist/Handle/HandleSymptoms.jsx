@@ -41,12 +41,18 @@ export default function HandleSymptoms(props) {
         newSymptom({name: value})
     }
 
+    const clearInput = () => {
+        newSymptom({
+            name: ""
+        })
+    }
+
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         const addSymptom = await createSymptom(symptom, artist.id);
         setSymptoms([...symptoms, addSymptom])
-
+        clearInput()
     }
 
     return(
@@ -61,7 +67,7 @@ export default function HandleSymptoms(props) {
         <form className="add-symptom">
             <label>
                 New Symptom
-                <input type="text" name="name" onChange={handleChange}/>
+                <input type="text" name="name" value={symptom.name} onChange={handleChange} required/>
             </label>
             <button onClick={handleSubmit}>Add Symptom</button>
         </form>
