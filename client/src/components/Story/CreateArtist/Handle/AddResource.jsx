@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { readAllResources } from '../../../../services/resources'
+import { readAllResources, createResource } from '../../../../services/resources'
 import { getOneArtist } from '../../../../services/artists'
 import './AddResources.css'
 import Layout from '../../../Layout/Layout'
@@ -37,6 +37,19 @@ export default function AddResource(props) {
             [name]: value})
     }
 
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        const addResource = await createResource(artist.id, formData);
+        listResources([...resources, addResource])
+        clearInput()
+    }
+
+    const clearInput = () => {
+            setFormData({
+                name: "",
+                link: ""
+            })
+        }
     return(
         <div>
             <Layout>
@@ -45,7 +58,7 @@ export default function AddResource(props) {
                 <a className="resource-list" href={resource.link}><p>{resource.name}</p></a>
             </div>
             ))}
-            <form className="new-resource">
+            <form onSubmit={handleSubmit} className="new-resource">
                 <label>
                     Name of Resource:
                 <input type="text" name="name" onChange={handleChange}/>

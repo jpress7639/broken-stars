@@ -33404,3 +33404,571 @@ Processing by ArtistsController#index as HTML
 Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 3.3ms | Allocations: 1440)
 
 
+Started GET "/artists" for ::1 at 2020-08-18 13:48:03 -0400
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 36ms (Views: 18.2ms | ActiveRecord: 8.3ms | Allocations: 10863)
+
+
+Started GET "/artists" for ::1 at 2020-08-18 13:48:03 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 15.4ms | ActiveRecord: 1.2ms | Allocations: 1440)
+
+
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:48:53 -0400
+Started GET "/artists/20" for ::1 at 2020-08-18 13:48:53 -0400
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (3.4ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 1.8ms | Allocations: 960)
+
+
+Completed 200 OK in 99ms (Views: 45.0ms | ActiveRecord: 30.0ms | Allocations: 10287)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:48:56 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:48:56 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+  [1m[36mArtist Load (8.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 8.6ms | Allocations: 1333)
+
+
+  [1m[36mArtist Load (10.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (1.0ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 21ms (Views: 3.3ms | ActiveRecord: 11.9ms | Allocations: 2717)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:49:42 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:49:42 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:49:42 -0400
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (0.3ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 1.0ms | Allocations: 1637)
+
+
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Processing by ArtistsController#index as HTML
+Completed 200 OK in 166ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 2944)
+
+
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.5ms | Allocations: 1713)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:49:45 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:49:45 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:49:45 -0400
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+  [1m[36mArtist Load (2.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.9ms | Allocations: 1440)
+
+
+  [1m[36mResource Load (15.0ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+  [1m[36mArtist Load (2.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 62.8ms | ActiveRecord: 17.9ms | Allocations: 4136)
+
+
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 78ms (Views: 0.6ms | ActiveRecord: 3.3ms | Allocations: 3972)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:50:59 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:50:59 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:50:59 -0400
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (151.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mArtist Load (159.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[36mArtist Load (148.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+Completed 200 OK in 161ms (Views: 0.9ms | ActiveRecord: 151.4ms | Allocations: 1985)
+
+
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  [1m[36mResource Load (1.3ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+Completed 200 OK in 264ms (Views: 115.6ms | ActiveRecord: 148.3ms | Allocations: 3218)
+
+
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 280ms (Views: 113.9ms | ActiveRecord: 160.8ms | Allocations: 5130)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:51:27 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:51:27 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:51:27 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (5.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 5.1ms | Allocations: 1440)
+
+
+  [1m[36mArtist Load (121.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 124ms (Views: 0.6ms | ActiveRecord: 121.4ms | Allocations: 3316)
+
+
+  [1m[36mArtist Load (121.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (0.5ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 352ms (Views: 2.5ms | ActiveRecord: 122.1ms | Allocations: 4728)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:51:30 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:51:30 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:51:30 -0400
+Processing by ArtistsController#show as HTML
+Processing by ResourcesController#index as HTML
+  Parameters: {"id"=>"20"}
+  Parameters: {"artist_id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (4.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 4.2ms | Allocations: 1361)
+
+
+  [1m[36mArtist Load (7.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mArtist Load (7.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  [1m[36mResource Load (1.0ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+Completed 200 OK in 444ms (Views: 436.6ms | ActiveRecord: 7.3ms | Allocations: 3220)
+
+
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 448ms (Views: 435.9ms | ActiveRecord: 8.9ms | Allocations: 4547)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:51:41 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:51:41 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:51:41 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (30.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[36mArtist Load (24.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+Completed 200 OK in 34ms (Views: 0.9ms | ActiveRecord: 30.5ms | Allocations: 1748)
+
+
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  [1m[36mArtist Load (30.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 6.6ms | ActiveRecord: 24.4ms | Allocations: 2468)
+
+
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (3.8ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 795ms (Views: 2.3ms | ActiveRecord: 34.6ms | Allocations: 4717)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:53:12 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:53:12 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+Started GET "/artists" for ::1 at 2020-08-18 13:53:12 -0400
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.6ms | Allocations: 1487)
+
+
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+Processing by ArtistsController#index as HTML
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mResource Load (0.4ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 313ms (Views: 311.1ms | ActiveRecord: 1.3ms | Allocations: 2334)
+
+
+Completed 200 OK in 317ms (Views: 312.3ms | ActiveRecord: 1.7ms | Allocations: 3457)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:53:21 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:53:21 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:53:21 -0400
+Processing by ArtistsController#show as HTML
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+  Parameters: {"id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (7.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 4.0ms | ActiveRecord: 7.0ms | Allocations: 1440)
+
+
+  [1m[36mArtist Load (56.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mArtist Load (55.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[36mResource Load (0.9ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 466ms (Views: 0.8ms | ActiveRecord: 55.9ms | Allocations: 3600)
+
+
+Completed 200 OK in 470ms (Views: 408.3ms | ActiveRecord: 57.0ms | Allocations: 4724)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:54:05 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:54:06 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:54:06 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArtist Load (4.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 4.4ms | Allocations: 857)
+
+
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (2.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 2.9ms | Allocations: 1440)
+
+
+  [1m[36mArtist Load (64.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (1.1ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 1126ms (Views: 2.8ms | ActiveRecord: 65.5ms | Allocations: 3674)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:54:08 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:54:08 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:54:08 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+Processing by ResourcesController#index as HTML
+Processing by ArtistsController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+  [1m[36mArtist Load (83.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 87ms (Views: 0.7ms | ActiveRecord: 83.0ms | Allocations: 1725)
+
+
+  [1m[36mArtist Load (82.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 88ms (Views: 5.2ms | ActiveRecord: 82.2ms | Allocations: 2578)
+
+
+  [1m[36mArtist Load (93.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (0.4ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 421ms (Views: 2.3ms | ActiveRecord: 93.4ms | Allocations: 4301)
+
+
+Started POST "/artists/[object%20Object]/resources" for ::1 at 2020-08-18 13:54:23 -0400
+Processing by ResourcesController#create as HTML
+  Parameters: {"20"=>nil, "artist_id"=>"[object Object]"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 127)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: resource):
+  
+app/controllers/resources_controller.rb:57:in `resource_params'
+app/controllers/resources_controller.rb:23:in `create'
+Started POST "/artists/[object%20Object]/resources" for ::1 at 2020-08-18 13:54:25 -0400
+Processing by ResourcesController#create as HTML
+  Parameters: {"20"=>nil, "artist_id"=>"[object Object]"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: resource):
+  
+app/controllers/resources_controller.rb:57:in `resource_params'
+app/controllers/resources_controller.rb:23:in `create'
+Started POST "/artists/[object%20Object]/resources" for ::1 at 2020-08-18 13:54:26 -0400
+Processing by ResourcesController#create as HTML
+  Parameters: {"20"=>nil, "artist_id"=>"[object Object]"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: resource):
+  
+app/controllers/resources_controller.rb:57:in `resource_params'
+app/controllers/resources_controller.rb:23:in `create'
+Started GET "/artists/20" for ::1 at 2020-08-18 13:54:41 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:54:41 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:54:41 -0400
+Processing by ArtistsController#show as HTML
+Processing by ResourcesController#index as HTML
+  Parameters: {"id"=>"20"}
+  Parameters: {"artist_id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (8.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 8.6ms | Allocations: 1067)
+
+
+  [1m[36mArtist Load (17.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mArtist Load (28.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  [1m[36mResource Load (11.9ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+Completed 200 OK in 215ms (Views: 185.8ms | ActiveRecord: 28.5ms | Allocations: 3216)
+
+
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 218ms (Views: 185.9ms | ActiveRecord: 29.4ms | Allocations: 4406)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:54:53 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:54:53 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:54:53 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (3.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 3.1ms | Allocations: 1440)
+
+
+  [1m[36mArtist Load (32.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 36ms (Views: 0.9ms | ActiveRecord: 32.1ms | Allocations: 3309)
+
+
+  [1m[36mArtist Load (30.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (5.1ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 131ms (Views: 2.6ms | ActiveRecord: 35.7ms | Allocations: 4697)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:55:09 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:55:09 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:55:09 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 1.0ms | Allocations: 857)
+
+
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+  [1m[36mArtist Load (3.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (3.0ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Processing by ArtistsController#index as HTML
+Completed 200 OK in 68ms (Views: 59.7ms | ActiveRecord: 6.5ms | Allocations: 1946)
+
+
+  [1m[36mArtist Load (1.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.6ms | Allocations: 1655)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:55:19 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:55:19 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:55:19 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (74.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 77ms (Views: 0.6ms | ActiveRecord: 74.2ms | Allocations: 1725)
+
+
+  [1m[36mArtist Load (18.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mArtist Load (13.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  [1m[36mResource Load (10.2ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+Completed 200 OK in 38ms (Views: 24.5ms | ActiveRecord: 13.3ms | Allocations: 3209)
+
+
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 47ms (Views: 14.3ms | ActiveRecord: 28.7ms | Allocations: 4639)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:55:23 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 857)
+
+
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:55:23 -0400
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+  [1m[36mArtist Load (2.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  [1m[36mResource Load (0.8ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 3.6ms | Allocations: 1637)
+
+
+Started GET "/artists" for ::1 at 2020-08-18 13:55:23 -0400
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.7ms | Allocations: 1440)
+
+
+Started GET "/artists/20" for ::1 at 2020-08-18 13:55:30 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:55:30 -0400
+Processing by ArtistsController#show as HTML
+Processing by ResourcesController#index as HTML
+  Parameters: {"id"=>"20"}
+  Parameters: {"artist_id"=>"20"}
+Started GET "/artists" for ::1 at 2020-08-18 13:55:30 -0400
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+  [1m[36mArtist Load (1.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.2ms | Allocations: 1195)
+
+
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+Processing by ArtistsController#index as HTML
+  [1m[36mResource Load (12.0ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+  [1m[36mArtist Load (11.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 358ms (Views: 315.3ms | ActiveRecord: 13.8ms | Allocations: 3786)
+
+
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+Completed 200 OK in 330ms (Views: 318.6ms | ActiveRecord: 11.4ms | Allocations: 2579)
+
+
+Started POST "/artists/[object%20Object]/resources" for ::1 at 2020-08-18 13:55:39 -0400
+Processing by ResourcesController#create as HTML
+  Parameters: {"20"=>nil, "artist_id"=>"[object Object]"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: resource):
+  
+app/controllers/resources_controller.rb:57:in `resource_params'
+app/controllers/resources_controller.rb:23:in `create'
+Started POST "/artists/[object%20Object]/resources" for ::1 at 2020-08-18 13:55:40 -0400
+Processing by ResourcesController#create as HTML
+  Parameters: {"20"=>nil, "artist_id"=>"[object Object]"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: resource):
+  
+app/controllers/resources_controller.rb:57:in `resource_params'
+app/controllers/resources_controller.rb:23:in `create'
+Started POST "/artists/[object%20Object]/resources" for ::1 at 2020-08-18 13:55:40 -0400
+Processing by ResourcesController#create as HTML
+  Parameters: {"20"=>nil, "artist_id"=>"[object Object]"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: resource):
+  
+app/controllers/resources_controller.rb:57:in `resource_params'
+app/controllers/resources_controller.rb:23:in `create'
+Started GET "/artists/20" for ::1 at 2020-08-18 13:56:45 -0400
+Started GET "/artists/20/resources" for ::1 at 2020-08-18 13:56:45 -0400
+Started GET "/artists" for ::1 at 2020-08-18 13:56:45 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"20"}
+Processing by ResourcesController#index as HTML
+  Parameters: {"artist_id"=>"20"}
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (22.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:45:in `set_artist'
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 22.4ms | Allocations: 1724)
+
+
+  [1m[36mArtist Load (24.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mArtist Load (6.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/resources_controller.rb:7:in `index'
+  ↳ app/controllers/artists_controller.rb:8:in `index'
+  [1m[36mResource Load (8.7ms)[0m  [1m[34mSELECT "resources".* FROM "resources" WHERE "resources"."artist_id" = $1[0m  [["artist_id", 20]]
+Completed 200 OK in 650ms (Views: 643.0ms | ActiveRecord: 6.3ms | Allocations: 3223)
+
+
+  ↳ app/controllers/resources_controller.rb:10:in `index'
+Completed 200 OK in 671ms (Views: 634.2ms | ActiveRecord: 32.8ms | Allocations: 4658)
+
+
+Started POST "/artists/20/resources" for ::1 at 2020-08-18 13:56:55 -0400
+Processing by ResourcesController#create as HTML
+  Parameters: {"name"=>"National Helpline", "link"=>"https://www.samhsa.gov/find-help/national-helpline", "artist_id"=>"20", "resource"=>{"name"=>"National Helpline", "link"=>"https://www.samhsa.gov/find-help/national-helpline"}}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:24:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 LIMIT $2[0m  [["name", "National Helpline"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 LIMIT $2[0m  [["link", "https://www.samhsa.gov/find-help/national-helpline"], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[36mResource Create (16.1ms)[0m  [1m[32mINSERT INTO "resources" ("name", "link", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "National Helpline"], ["link", "https://www.samhsa.gov/find-help/national-helpline"], ["artist_id", 20], ["created_at", "2020-08-18 17:56:55.747700"], ["updated_at", "2020-08-18 17:56:55.747700"]]
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/resources_controller.rb:26:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."name" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["name", "National Helpline"], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[36mResource Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "resources" WHERE "resources"."link" = $1 AND "resources"."id" != $2 LIMIT $3[0m  [["link", "https://www.samhsa.gov/find-help/national-helpline"], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/resources_controller.rb:28:in `create'
+Completed 201 Created in 80ms (Views: 0.3ms | ActiveRecord: 21.4ms | Allocations: 13017)
+
+
