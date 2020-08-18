@@ -41,7 +41,7 @@ div.artist-profile div.recos {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 div.artist-profile div.recos img {
