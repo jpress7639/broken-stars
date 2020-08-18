@@ -1,10 +1,14 @@
 div.artist-profile > h4 { 
+    background-color: rgba(33, 37, 37, 0.5);
     color: rgb(239, 239, 218);
     font-size: 25px;
     text-align: center;
-    margin-top: -130px;
-    margin-bottom: 50px;
+    margin: 150px auto;
     font-family: libre caslon display;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 200px;
+    height: 40px;
 }
 
 div.artist-profile{
@@ -112,6 +116,9 @@ div.artist-profile div.button-divs button:hover{
 
     div.artist-profile > h4 {
         font-size: 15px;
+        margin: 50px auto;
+        height: 20px;
+        width: 160px;
     }
 
     div.artist-profile{
@@ -119,15 +126,22 @@ div.artist-profile div.button-divs button:hover{
     }
 
     div.artist-profile p{
-        font-size: 7.5px;
-        line-height: 12px;
+        font-size: 8px;
+        line-height: 13px;
         margin-bottom: -110px;
     }
 
     div.artist-profile img{
         height: 200px;
+        object-fit: contain;
+        margin-right: 20px;
         padding-bottom: 55px;
-        background-color: rgba(33, 37, 37, 0.5);
+        background-color: none;
+        box-shadow: none;
+    }
+
+    div.artist-profile > img {
+        margin-left: -30px;
     }
 
     div.artist-profile div.button-divs{
@@ -148,12 +162,14 @@ div.artist-profile div.button-divs button:hover{
 
     div.artist-profile div.recos img{
         margin-top: 100px;
+        margin-left: -30px;
         height: 150px;
         padding: 0;
     }
 
     div.artist-profile div.recos p{
         font-size: 15px;
+        height: 70px;
         line-height: 20px;
         margin-top: 125px;
         margin-bottom: -15px;
@@ -180,7 +196,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     div.artist-profile > h4 {
         font-size: 20px;
-        margin-top: -220px;
+        margin: 50px auto;
     }
     
     div.artist-profile p{
@@ -199,6 +215,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     div.artist-profile div.recos p{
         font-size: 15px;
+        height: 100px;
     }
 }
 

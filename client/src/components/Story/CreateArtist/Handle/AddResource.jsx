@@ -61,11 +61,11 @@ export default function AddResource(props) {
             <form onSubmit={handleSubmit} className="new-resource">
                 <label>
                     Name of Resource:
-                <input type="text" name="name" onChange={handleChange}/>
+                <input type="text" value={formData.name} name="name" onChange={handleChange}/>
                 </label>
               <label>
                   Link to Resource:
-              <input type="text" name="link"onChange={handleChange}/>
+              <input type="text" value={formData.link} name="link"onChange={handleChange}/>
               </label>
                 <button>Add Resource</button>
             </form>

@@ -31,7 +31,7 @@ export default function ShowArtist(props) {
     </div>
     <div className="recos">
     <img src={artist.work_URL}></img>
-    <p>Check out <br></br><em>{artist.work_example}</em></p>
+    <p>Artist's work includes<br></br><em>{artist.work_example}</em></p>
     </div>
    
     </div>

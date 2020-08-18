@@ -77,6 +77,16 @@ button.new-artist:hover{
         font-size: 20px;
     }
 
+    input.search{
+        font-size: 10px;
+        height: 30px;
+        width: 150px;
+    }
+
+    ::placeholder{
+        font-size: 15px;
+    }
+
     div.story-map img {
         height: 100px;
     }
