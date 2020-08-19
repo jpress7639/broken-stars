@@ -12,12 +12,12 @@ export default function Main() {
         displayArtists();
         setSearch("")
     }, [])
-
+// getting data onto the page
     const displayArtists = async () => {
         const artistList = await getAllArtists();
         setStories(artistList);
     }
-
+// Searching Through Artists Names
     const handleSearch = event => {
         const queriedStories = artists.filter(artist => artist.name.toLowerCase().includes(event.target.value.toLowerCase()))
         setSearch(queriedStories)
@@ -31,6 +31,7 @@ export default function Main() {
                 <h3>Stories</h3>
                 <input onChange={handleSearch} className="search" name="search" placeholder="Search for a Story!" />
                 <div className="story-map">
+                    {/* Rendered in Ternary */}
                     {searched === "" ? artists.map((artist) => (
                         <div className="story-links">
                             <Link to={`/artists/${artist.id}`} style={{ textDecoration: 'none', color: 'rgb(239,239,218)' }}><img src={artist.profile_img} alt={artist.name} ></img>

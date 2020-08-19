@@ -20,6 +20,7 @@ form.create-form label{
 
 form.create-form input {
     margin: 15px;
+    width: 300px;
     background-color: rgba(37,37,39,0.5);
     border: 2px solid rgb(239,239,218);
     color: rgb(239,239,218);
@@ -29,6 +30,8 @@ form.create-form textarea{
     background-color: rgba(37,37,39,0.5);
     border: 2px solid rgb(239,239,218);
     color: rgb(239,239,218);
+    font-size: 25px;
+    font-family: lato;
 }
 
 form.create-form input:nth-of-type(3){
@@ -74,4 +77,26 @@ form.create-form button:hover{
         width: 100px;
     }
 
+    form.create-form textarea{
+        font-size: 15px;
+    }
+
+    ::placeholder{
+        font-size: 15px;
+    }
+
   }
+
+  @media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    form.create-form textarea{
+        font-size: 15px;
+    }
+
+    ::placeholder{
+        font-size: 15px;
+    }
+}

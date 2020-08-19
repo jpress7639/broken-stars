@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
 import { postArtist } from '../../../services/artists'
 import './CreateArtist.css'
 import Layout from '../../Layout/Layout'
@@ -24,10 +23,9 @@ export default function CreateArtist(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const artistData = await postArtist(formData)
-        // props.setArtist(artistData)
+        await postArtist(formData)
         alert(`Artist Created!`)
-        props.history.push(`/`)
+        props.history.push(`/home`)
     }
 
     return(

@@ -3,7 +3,7 @@ import Header from './Header/Header'
 import './Layout.css'
 
 const Layout = (props) => {
-    return(
+    return (
         <div className="layout">
             <div className="moon-animation"></div>
             <div className="star1-animation"></div>

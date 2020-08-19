@@ -2,15 +2,11 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
 
-class Header extends Component{
-    constructor(){
-        super()
-    }
-
+class Header extends Component {
     render() {
-        return(
+        return (
             <div className="header">
-           <h2><Link to='/' style={{ textDecoration: 'none', color: 'rgb(239, 239, 218)' }}>Broken Stars</Link></h2>
+                <h2><Link to='/home' style={{ textDecoration: 'none', color: 'rgb(239, 239, 218)' }}>Broken Stars</Link></h2>
             </div>
         )
     }

@@ -87,12 +87,20 @@ button.new-artist:hover{
         font-size: 15px;
     }
 
+    div.story-map{
+        flex-wrap: wrap;
+    }
+
     div.story-map img {
         height: 100px;
     }
 
     button.new-artist {
         font-size: 15px;
+    }
+
+    div.story-links{
+        margin-bottom: 10px;
     }
 
     div.story-links h4{
@@ -114,4 +122,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
         height: 150px;
         margin: auto;
     }
+
+    div.story-links{
+        margin: 10px;
+    }
+
 }

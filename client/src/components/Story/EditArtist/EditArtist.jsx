@@ -42,18 +42,13 @@ export default function EditArtist(props) {
         e.preventDefault()
         const {id} = props.match.params;
         const changeArtist = await updateArtist(id, formData)
-        // props.setArtist(
-        //     props.artist.map((artist) => {
-        //         return artist.id === id;
-        //     })
-        // )
         alert('Artist Story Updated!')
         props.history.push(`/artists/${changeArtist.id}`)
     }
 
     const handleClick = async () => {
         await destroyArtist(props.match.params.id)
-        props.history.push(`/`)
+        props.history.push(`/home`)
     }
 
     return(

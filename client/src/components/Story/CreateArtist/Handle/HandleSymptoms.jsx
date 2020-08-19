@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import { readAllSymptoms, destroySymptom, createSymptom } from "../../../../services/symptoms"
 import { getOneArtist } from "../../../../services/artists"
 import Layout from "../../../Layout/Layout"
@@ -37,8 +37,8 @@ export default function HandleSymptoms(props) {
     }
 
     const handleChange = (e) => {
-        const {value} = e.target;
-        newSymptom({name: value})
+        const { value } = e.target;
+        newSymptom({ name: value })
     }
 
     const clearInput = () => {
@@ -55,28 +55,28 @@ export default function HandleSymptoms(props) {
         clearInput()
     }
 
-    return(
+    return (
         <div>
             <Layout>
-        <h3 className="symptom-header">{artist.name}'s Main Symptoms</h3>
-        <div className="symptom-list">
-        {symptoms && symptoms.map((symptom) => (
-            <div className="modify"><p>{symptom.name}<button onClick={() => handleClick(symptom.id)}>X</button></p></div>
-        ))}
-        </div>
-        <form className="add-symptom">
-            <label>
-                New Symptom
-                <input type="text" name="name" value={symptom.name} onChange={handleChange} required/>
-            </label>
-            <button onClick={handleSubmit}>Add Symptom</button>
-        </form>
-        <footer>
-    <HandleResources 
-    {...props}
-    artist={artist}/>
-    </footer>
-        </Layout>
+                <h3 className="symptom-header">{artist.name}'s Main Symptoms</h3>
+                <div className="symptom-list">
+                    {symptoms && symptoms.map((symptom) => (
+                        <div className="modify"><p>{symptom.name}<button onClick={() => handleClick(symptom.id)}>X</button></p></div>
+                    ))}
+                </div>
+                <form className="add-symptom">
+                    <label>
+                        New Symptom
+                <input type="text" name="name" value={symptom.name} onChange={handleChange} required />
+                    </label>
+                    <button onClick={handleSubmit}>Add Symptom</button>
+                </form>
+                <footer>
+                    <HandleResources
+                        {...props}
+                        artist={artist} />
+                </footer>
+            </Layout>
         </div>
     )
 }

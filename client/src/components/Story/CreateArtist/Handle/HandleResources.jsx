@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { readAllResources } from '../../../../services/resources'
 import '../../../Layout/Footer/Footer.css'
@@ -17,16 +17,16 @@ export default function HandleResources(props) {
         setResources(resourceList)
     }
 
-    return(
+    return (
         <div className="resources">
             <h3>Resources for {artist.disorder}:</h3>
             <div className="links">
-            {resources.map((resource) => (
-           
-                <a className="footer-links" href={resource.link}><p>{resource.name}</p></a>
-            ))}
-             </div>
-           <button><Link to={`/artists/${artist.id}/resources/new`} style={{ textDecoration: 'none', color: 'rgb(239,239,218)' }}>Add New Resource</Link></button>
+                {resources.map((resource) => (
+
+                    <a className="footer-links" href={resource.link}><p>{resource.name}</p></a>
+                ))}
+            </div>
+            <button><Link to={`/artists/${artist.id}/resources/new`} style={{ textDecoration: 'none', color: 'rgb(239,239,218)' }}>Add New Resource</Link></button>
         </div>
     )
 }
