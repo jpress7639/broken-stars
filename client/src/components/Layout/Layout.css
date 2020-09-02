@@ -201,7 +201,7 @@ div.star11-animation{
 @keyframes spin { 100% {-webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 @media only screen 
-  and (min-device-width: 320px) 
+  and (min-device-width: 420px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -278,6 +278,156 @@ div.star11-animation{
         left: 2%;
     } 
   }
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 419px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    div.moon-animation, div.star1-animation, div.star3-animation {
+        display: none
+    }
+
+    div.star2-animation{
+        height: 90px;
+        width: 90px;
+        bottom: 38%;
+        left: 51%;
+    }
+
+    div.star4-animation{
+        height: 60px;
+        width: 60px;
+        top: 27.5%;
+        left: 50%;
+    }
+
+
+    div.star5-animation{
+        height: 60px;
+        width: 60px;
+        left: 35%;
+        top: 12%;
+    }
+
+    div.star6-animation{
+        height: 60px;
+        width: 70px;
+        left: 9%;
+        top: 0;
+    }
+
+    div.star7-animation{
+        height: 50px;
+        width: 60px;
+        left: 30%;
+        top: -2%;
+    }
+
+    div.star8-animation{
+        height: 50px;
+        width: 70px;
+        left: 52%;
+    }
+
+    div.star9-animation{
+        width: 50px;
+        height: 40px;
+        left: 67.5%;
+        top: 15px;
+    }
+
+    div.star10-animation{
+        width: 50px;
+        height: 50px;
+        bottom: 47.5%;
+        left: 16%;
+    }
+
+    div.star11-animation{
+        width: 40px;
+        height: 40px;
+        bottom: 51%;
+        left: 3%;
+    } 
+
+  }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 374px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    div.moon-animation, div.star1-animation, div.star3-animation {
+        display: none
+    }
+
+    div.star2-animation{
+        height: 90px;
+        width: 90px;
+        bottom: 38%;
+        left: 60%;
+    }
+
+    div.star4-animation{
+        height: 60px;
+        width: 60px;
+        top: 27.5%;
+        left: 60%;
+    }
+
+
+    div.star5-animation{
+        height: 60px;
+        width: 60px;
+        left: 40%;
+        top: 12%;
+    }
+
+    div.star6-animation{
+        height: 60px;
+        width: 70px;
+        left: 12%;
+        top: 0;
+    }
+
+    div.star7-animation{
+        height: 50px;
+        width: 60px;
+        left: 37.5%;
+        top: -2%;
+    }
+
+    div.star8-animation{
+        height: 50px;
+        width: 70px;
+        left: 62.5%;
+    }
+
+    div.star9-animation{
+        width: 50px;
+        height: 40px;
+        left: 80%;
+        top: 20px;
+    }
+
+    div.star10-animation{
+        width: 50px;
+        height: 50px;
+        bottom: 47.5%;
+        left: 20%;
+    }
+
+    div.star11-animation{
+        width: 40px;
+        height: 40px;
+        bottom: 51%;
+        left: 3%;
+    } 
+
+
+  }
+
 
   @media only screen 
   and (min-device-width: 768px) 
